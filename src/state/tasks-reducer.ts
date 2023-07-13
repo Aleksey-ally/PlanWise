@@ -72,11 +72,11 @@ export const tasksReducer = (
             return copyState;
         }
 
-        case "SET-TASKS" : {
+        case "SET-TASKS": {
             return {
                 ...state,
-                [action.todoId]: action.tasks
-            }
+                [action.todoId]: action.tasks,
+            };
         }
 
         case "REMOVE-TASK": {
@@ -167,13 +167,18 @@ export const changeTaskTitleAC = (
     return {type: "CHANGE-TASK-TITLE", title, todolistId, taskId};
 };
 
-export const setTasksAC = (tasks: TaskType[], todoId: string) => ({type: "SET-TASKS", tasks, todoId} as const)
+export const setTasksAC = (tasks: TaskType[], todoId: string) =>
+    ({type: "SET-TASKS", tasks, todoId} as const);
 
 export const getTasksTC = (todoId: string) => (dispatch: Dispatch) => {
     todolistsAPI.getTasks(todoId).then((res) => {
-        dispatch(setTasksAC(res.data.items, todoId))
+        dispatch(setTasksAC(res.data.items, todoId));
     });
 };
 
-export const deleteTaskTC = () => (dispatch: Dispatch) => {
-};
+export const deleteTaskTC =
+    (todoId: string, taskId: string) => (dispatch: Dispatch) => {
+        todolistsAPI.deleteTask(todoId, taskId).then((res) => {
+            dispatch(removeTaskAC(taskId, todoId));
+        });
+    };
