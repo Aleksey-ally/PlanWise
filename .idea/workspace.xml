@@ -1,38 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="24b16dbf-0f37-440f-9f30-0643e13c6bab" name="Changes" comment="dfrhdsrth">
-      <change afterPath="$PROJECT_DIR$/src/api/tasks-api.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stories/tasks-api.stories.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/todolist-api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/todolist-api.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stories/todolists-api.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/stories/todolists-api.stories.tsx" afterDir="false" />
+    <list default="true" id="14d9459d-3626-4809-8f46-6aec759c113e" name="Changes" comment="Learned and created thunk creator, thunk and learned and connected middleware">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/store.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="PostCSS File" />
-        <option value="TypeScript JSX File" />
-        <option value="TypeScript File" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2PZAKe6hAaqn3Nya44sYQckTY4O" />
+  <component name="ProjectId" id="2SWxNLdgviPOyEFdK6yBpfiZwOF" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -43,49 +28,15 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/Aleksey/Desktop/it-incubator/Todolist/src/api",
-    "list.type.of.created.stylesheet": "PostCSS",
     "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs.jest.jest_package": "C:/Users/Aleksey/Desktop/it-incubator/Todolist/node_modules/react-scripts",
     "nodejs_package_manager_path": "yarn",
-    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\Aleksey\\Desktop\\it-incubator\\Todolist\\node_modules\\prettier",
     "settings.editor.selected.configurable": "reference.settings.ide.settings.web.browsers",
     "ts.external.directory.path": "C:\\Users\\Aleksey\\Desktop\\it-incubator\\Todolist\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Aleksey\Desktop\it-incubator\Todolist\src\api" />
-      <recent name="C:\Users\Aleksey\Desktop\it-incubator\Todolist\src\stories" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Aleksey\Desktop\it-incubator\Todolist\src\AppWithRedux" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Jest.tasks-reducer.test.ts">
-    <configuration name="tasks-reducer.test.ts" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST_FILE" />
-      <test-file value="$PROJECT_DIR$/src/state/tasks-reducer.test.ts" />
-      <method v="2" />
-    </configuration>
-    <configuration name="jest:integration" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="jest:integration" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager">
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -96,293 +47,37 @@
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="storybook" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="storybook" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <configuration name="test" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="test" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.storybook" />
         <item itemvalue="npm.start" />
-        <item itemvalue="npm.jest:integration" />
-        <item itemvalue="npm.test" />
-        <item itemvalue="Jest.tasks-reducer.test.ts" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="24b16dbf-0f37-440f-9f30-0643e13c6bab" name="Changes" comment="" />
-      <created>1683654168183</created>
+      <changelist id="14d9459d-3626-4809-8f46-6aec759c113e" name="Changes" comment="" />
+      <created>1689276097290</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1683654168183</updated>
-      <workItem from="1683654174287" duration="605000" />
-      <workItem from="1684176079760" duration="3000" />
-      <workItem from="1684176225184" duration="210000" />
-      <workItem from="1684176492378" duration="118000" />
-      <workItem from="1684176655949" duration="1006000" />
-      <workItem from="1684266158563" duration="2495000" />
-      <workItem from="1684352005068" duration="2301000" />
-      <workItem from="1684664287121" duration="241000" />
-      <workItem from="1684687371839" duration="7000" />
-      <workItem from="1684780396163" duration="206000" />
-      <workItem from="1685556031390" duration="209000" />
-      <workItem from="1685986644560" duration="723000" />
-      <workItem from="1685987477819" duration="1545000" />
-      <workItem from="1685989063316" duration="36000" />
-      <workItem from="1685989116812" duration="1872000" />
-      <workItem from="1685991228570" duration="10000" />
-      <workItem from="1685991254511" duration="5000" />
-      <workItem from="1685991277466" duration="854000" />
-      <workItem from="1686482814572" duration="5594000" />
-      <workItem from="1686938365547" duration="382000" />
-      <workItem from="1687095989097" duration="625000" />
-      <workItem from="1687195140730" duration="1632000" />
-      <workItem from="1687196820259" duration="5298000" />
-      <workItem from="1687286152633" duration="2085000" />
-      <workItem from="1687290835669" duration="1493000" />
-      <workItem from="1687624143180" duration="33000" />
-      <workItem from="1687893684951" duration="914000" />
-      <workItem from="1687976246868" duration="3095000" />
-      <workItem from="1688148412767" duration="76000" />
-      <workItem from="1688228678480" duration="35000" />
-      <workItem from="1688498351808" duration="3783000" />
-      <workItem from="1688578597428" duration="4318000" />
-      <workItem from="1688927655141" duration="19000" />
-      <workItem from="1689010126945" duration="3818000" />
+      <updated>1689276097290</updated>
+      <workItem from="1689276101386" duration="253000" />
     </task>
-    <task id="LOCAL-00001" summary="Added opportunity add todo lists and rename title todo list with  title tasks">
-      <created>1683654782127</created>
+    <task id="LOCAL-00001" summary="Learned and created thunk creator, thunk and learned and connected middleware">
+      <created>1689276283386</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1683654782127</updated>
+      <updated>1689276283386</updated>
     </task>
-    <task id="LOCAL-00002" summary="Installed MUI, learned and used him">
-      <created>1684176318931</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1684176318931</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Installed MUI, learned and used him">
-      <created>1684176419272</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1684176419272</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Created and learned Action, Action Creater, Dispatch">
-      <created>1684177671375</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1684177671375</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Rewrote funcs removeTodolist and addTask on actions">
-      <created>1684268690944</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1684268690944</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Rewrote rest funcs on Actions and Reducers">
-      <created>1684354517237</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1684354517237</updated>
-    </task>
-    <task id="LOCAL-00007" summary="TDD for todolists, created SuperCheckBox and swap him simple CheckBox">
-      <created>1684780599478</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1684780599478</updated>
-    </task>
-    <task id="LOCAL-00008" summary="TDD for tasksReducer and todolists-tasks-reducer">
-      <created>1685556238545</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1685556238545</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Added beforeEach for tests, removed duplicate initial code">
-      <created>1685986871483</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1685986871483</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Install redux, created and learn redux/store, 3 App (useState, useReducer and Redux) and 2 Todolist (simple and with Redux)">
-      <created>1685991023352</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1685991023352</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Install redux, created and learn redux/store, 3 App (useState, useReducer and Redux) and 2 Todolist (simple and with Redux)">
-      <created>1685992128932</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1685992128932</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Made optimization, created and learned useCallback and memo (equal React.memo), created new component inside Todolist for Buttons MIU to add memo for optimization, created Task component and relocated logic for tasks inside him">
-      <created>1686938747245</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1686938747245</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Installed and learned storybook, created stories for AddItemForm, Task and EditableSpan">
-      <created>1687200938796</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1687200938796</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Installed and learned storybook, created stories for AddItemForm, Task and EditableSpan">
-      <created>1687201696506</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1687201696506</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Installed and learned Snapshot tests">
-      <created>1687291713535</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1687291713535</updated>
-    </task>
-    <task id="LOCAL-00016" summary="wsedagawr">
-      <created>1687624170196</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1687624170196</updated>
-    </task>
-    <task id="LOCAL-00017" summary="Learned custom hooks and created custom hook for AppWithRedux">
-      <created>1687894534297</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1687894534297</updated>
-    </task>
-    <task id="LOCAL-00018" summary="Learned custom hooks and created custom hook for AppWithRedux">
-      <created>1687894549073</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1687894549073</updated>
-    </task>
-    <task id="LOCAL-00019" summary="Installed axios lib, created and learned get and post requests">
-      <created>1688148484163</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1688148484163</updated>
-    </task>
-    <task id="LOCAL-00020" summary="фыапфыпфып">
-      <created>1688228706700</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1688228706700</updated>
-    </task>
-    <task id="LOCAL-00021" summary="Created and learned delete and put requests">
-      <created>1688500439870</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1688500439870</updated>
-    </task>
-    <task id="LOCAL-00022" summary="Learned DAL, created folder &quot;api&quot; and relocated logic request for server inside object &quot;todolistAPI&quot;">
-      <created>1688578623338</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1688578623338</updated>
-    </task>
-    <task id="LOCAL-00023" summary="Learned method axios.create(),&#10;created const instance inside which method axios.create(), refactored all requests">
-      <created>1688579952806</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1688579952806</updated>
-    </task>
-    <task id="LOCAL-00024" summary="Learned and added generics for all request">
-      <created>1688583029624</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1688583029624</updated>
-    </task>
-    <task id="LOCAL-00025" summary="dfrhdsrth">
-      <created>1688927667737</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1688927667737</updated>
-    </task>
-    <option name="localTasksCounter" value="26" />
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added opportunity add todo lists and rename title todo list with  title tasks" />
-    <MESSAGE value="Installed MUI, learned and used him" />
-    <MESSAGE value="Created and learned Action, Action Creater, Dispatch" />
-    <MESSAGE value="Rewrote funcs removeTodolist and addTask on actions" />
-    <MESSAGE value="Rewrote rest funcs on Actions and Reducers" />
-    <MESSAGE value="TDD for todolists, created SuperCheckBox and swap him simple CheckBox" />
-    <MESSAGE value="TDD for tasksReducer and todolists-tasks-reducer" />
-    <MESSAGE value="Added beforeEach for tests, removed duplicate initial code" />
-    <MESSAGE value="Install redux, created and learn redux/store, 3 App (useState, useReducer and Redux) and 2 Todolist (simple and with Redux)" />
-    <MESSAGE value="Made optimization, created and learned useCallback and memo (equal React.memo), created new component inside Todolist for Buttons MIU to add memo for optimization, created Task component and relocated logic for tasks inside him" />
-    <MESSAGE value="Installed and learned storybook, created stories for AddItemForm, Task and EditableSpan" />
-    <MESSAGE value="Installed and learned Snapshot tests" />
-    <MESSAGE value="wsedagawr" />
-    <MESSAGE value="Learned custom hooks and created custom hook for AppWithRedux" />
-    <MESSAGE value="Installed axios lib, created and learned get and post requests" />
-    <MESSAGE value="фыапфыпфып" />
-    <MESSAGE value="Created and learned delete and put requests" />
-    <MESSAGE value="Learned DAL, created folder &quot;api&quot; and relocated logic request for server inside object &quot;todolistAPI&quot;" />
-    <MESSAGE value="Learned method axios.create(),&#10;created const instance inside which method axios.create(), refactored all requests" />
-    <MESSAGE value="Learned and added generics for all request" />
-    <MESSAGE value="dfrhdsrth" />
-    <option name="LAST_COMMIT_MESSAGE" value="dfrhdsrth" />
+    <MESSAGE value="Learned and created thunk creator, thunk and learned and connected middleware" />
+    <option name="LAST_COMMIT_MESSAGE" value="Learned and created thunk creator, thunk and learned and connected middleware" />
   </component>
 </project>
