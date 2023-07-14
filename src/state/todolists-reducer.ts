@@ -1,6 +1,6 @@
-import { Dispatch } from "redux";
-import { v1 } from "uuid";
-import { todolistsAPI, TodolistType } from "../api/todolists-api";
+import {Dispatch} from "redux";
+import {v1} from "uuid";
+import {todolistsAPI, TodolistType} from "../api/todolists-api";
 
 export type RemoveTodolistActionType = {
   type: "REMOVE-TODOLIST";
@@ -113,8 +113,16 @@ export const setTodoLists = (todos: TodolistType[]) =>
     todos,
   } as const);
 
-export const getTodolistsTC = () => (dispatch: Dispatch) => {
+export const getTodolistsTC =
+    () => (dispatch: Dispatch) => {
   todolistsAPI.getTodolists().then((res) => {
     dispatch(setTodoLists(res.data));
+  });
+};
+
+export const deleteTodolistsTC =
+    (id: string) => (dispatch: Dispatch) => {
+  todolistsAPI.deleteTodolist(id).then((res) => {
+    dispatch(removeTodolistAC(id));
   });
 };
