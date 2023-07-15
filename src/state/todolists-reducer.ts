@@ -119,8 +119,6 @@ export const createTodolistsTC =
     (title: string) => (dispatch: Dispatch) => {
         todolistsAPI.createTodolist(title)
             .then((res) => {
-
-
                 dispatch(addTodolistAC(res.data.data.item));
             });
     };

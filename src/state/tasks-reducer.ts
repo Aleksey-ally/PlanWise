@@ -196,3 +196,22 @@ export const changeTaskStatusTC =
                 });
             }
         };
+
+    export const changeTaskTittleTC =
+    (todoId: string, taskId: string, title: string) =>
+        (dispatch: Dispatch, getState: () => AppRootStateType) => {
+            const task = getState().tasks[todoId].find((t) => t.id === taskId);
+            if (task) {
+                const model: UpdateTaskModelType = {
+                    title,
+                    startDate: task.startDate,
+                    priority: task.priority,
+                    description: task.description,
+                    deadline: task.deadline,
+                    status: task.status,
+                };
+                todolistsAPI.updateTask(todoId, taskId, model).then((res) => {
+                    dispatch(changeTaskTitleAC(taskId, title, todoId));
+                });
+            }
+        };
