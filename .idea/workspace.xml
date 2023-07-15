@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14d9459d-3626-4809-8f46-6aec759c113e" name="Changes" comment="шднргто">
+    <list default="true" id="14d9459d-3626-4809-8f46-6aec759c113e" name="Changes" comment="Added createTodolistsTC">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/state/tasks-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/tasks-reducer.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/state/todolists-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/todolists-reducer.ts" afterDir="false" />
     </list>
@@ -70,7 +69,7 @@
       <workItem from="1689276101386" duration="807000" />
       <workItem from="1689277929500" duration="1081000" />
       <workItem from="1689357426219" duration="21000" />
-      <workItem from="1689443850132" duration="1127000" />
+      <workItem from="1689443850132" duration="3581000" />
     </task>
     <task id="LOCAL-00001" summary="Learned and created thunk creator, thunk and learned and connected middleware">
       <created>1689276283386</created>
@@ -149,7 +148,21 @@
       <option name="project" value="LOCAL" />
       <updated>1689357442273</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Added deleteTodolistsTC">
+      <created>1689445046949</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1689445046949</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Added createTodolistsTC">
+      <created>1689446894680</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1689446894680</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -173,6 +186,8 @@
     <MESSAGE value="Added createTaskTC and changed addTaskAC" />
     <MESSAGE value="Added changeTaskStatusTC" />
     <MESSAGE value="шднргто" />
-    <option name="LAST_COMMIT_MESSAGE" value="шднргто" />
+    <MESSAGE value="Added deleteTodolistsTC" />
+    <MESSAGE value="Added createTodolistsTC" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added createTodolistsTC" />
   </component>
 </project>
