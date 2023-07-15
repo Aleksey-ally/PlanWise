@@ -12,21 +12,15 @@ import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";
 import {Menu} from "@mui/icons-material";
 import {
-    addTodolistAC,
     changeTodolistFilterAC,
-    changeTodolistTitleAC, createTodolistsTC, deleteTodolistsTC,
+    changeTodolistTittleTC,
+    createTodolistsTC,
+    deleteTodolistsTC,
     FilterValuesType,
     getTodolistsTC,
-    removeTodolistAC,
     TodolistDomainType,
 } from "./state/todolists-reducer";
-import {
-    changeTaskStatusTC,
-    changeTaskTitleAC,
-    changeTaskTittleTC,
-    createTaskTC,
-    deleteTaskTC,
-} from "./state/tasks-reducer";
+import {changeTaskStatusTC, changeTaskTittleTC, createTaskTC, deleteTaskTC,} from "./state/tasks-reducer";
 import {useSelector} from "react-redux";
 import {AppRootStateType, useAppDispatch,} from "./state/store";
 import {TaskStatuses, TaskType} from "./api/todolists-api";
@@ -88,8 +82,7 @@ function App() {
     }, []);
 
     const changeTodolistTitle = useCallback(function (id: string, title: string) {
-        const action = changeTodolistTitleAC(id, title);
-        dispatch(action);
+        dispatch(changeTodolistTittleTC(id, title));
     }, []);
 
     const addTodolist = useCallback(

@@ -197,7 +197,7 @@ export const changeTaskStatusTC =
             }
         };
 
-    export const changeTaskTittleTC =
+export const changeTaskTittleTC =
     (todoId: string, taskId: string, title: string) =>
         (dispatch: Dispatch, getState: () => AppRootStateType) => {
             const task = getState().tasks[todoId].find((t) => t.id === taskId);

@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14d9459d-3626-4809-8f46-6aec759c113e" name="Changes" comment="Added createTodolistsTC">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="14d9459d-3626-4809-8f46-6aec759c113e" name="Changes" comment="Added changeTaskTittleTC">
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/state/tasks-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/tasks-reducer.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/state/todolists-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/todolists-reducer.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,7 +68,7 @@
       <workItem from="1689276101386" duration="807000" />
       <workItem from="1689277929500" duration="1081000" />
       <workItem from="1689357426219" duration="21000" />
-      <workItem from="1689443850132" duration="5194000" />
+      <workItem from="1689443850132" duration="5456000" />
     </task>
     <task id="LOCAL-00001" summary="Learned and created thunk creator, thunk and learned and connected middleware">
       <created>1689276283386</created>
@@ -170,7 +168,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689447511540</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Added changeTaskTittleTC">
+      <created>1689449150297</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1689449150297</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,6 +201,7 @@
     <MESSAGE value="шднргто" />
     <MESSAGE value="Added deleteTodolistsTC" />
     <MESSAGE value="Added createTodolistsTC" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added createTodolistsTC" />
+    <MESSAGE value="Added changeTaskTittleTC" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added changeTaskTittleTC" />
   </component>
 </project>

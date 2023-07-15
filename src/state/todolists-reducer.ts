@@ -130,3 +130,11 @@ export const deleteTodolistsTC =
                 dispatch(removeTodolistAC(id));
             });
     };
+
+export const changeTodolistTittleTC =
+    (id: string, title: string) => (dispatch: Dispatch) => {
+        todolistsAPI.updateTodolist(id, title)
+            .then((res) => {
+                dispatch(changeTodolistTitleAC(id, title));
+            });
+    };
