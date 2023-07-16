@@ -15,6 +15,7 @@ import { Menu } from "@mui/icons-material";
 import LinearProgress from "@mui/material/LinearProgress";
 import { useAppSelector } from "./store";
 import { RequestStatusType } from "./appReducer";
+import { ErrorSnackbars } from "../components/ErrorSnackbar/ErrorSnackbar";
 
 function App() {
   const status = useAppSelector<RequestStatusType>((state) => state.app.status);
@@ -34,6 +35,7 @@ function App() {
       <Container fixed>
         <TodolistsList />
       </Container>
+      <ErrorSnackbars/>
     </div>
   );
 }
