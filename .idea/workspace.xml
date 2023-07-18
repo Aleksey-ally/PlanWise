@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14d9459d-3626-4809-8f46-6aec759c113e" name="Changes" comment="Added functional during deletion todolist(button disabled until answer comes from server) and added catch for removeTodolistTC" />
+    <list default="true" id="14d9459d-3626-4809-8f46-6aec759c113e" name="Changes" comment="Added functional during deletion todolist(button disabled input and button for input)" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -74,7 +74,7 @@
       <workItem from="1689443850132" duration="5602000" />
       <workItem from="1689526086837" duration="1165000" />
       <workItem from="1689626485708" duration="26000" />
-      <workItem from="1689708176632" duration="299000" />
+      <workItem from="1689708176632" duration="394000" />
     </task>
     <task id="LOCAL-00001" summary="Learned and created thunk creator, thunk and learned and connected middleware">
       <created>1689276283386</created>
@@ -258,7 +258,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689708434660</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Added functional during deletion todolist(button disabled input and button for input)">
+      <created>1689708514464</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1689708514464</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -294,6 +301,7 @@
     <MESSAGE value="sdagsda" />
     <MESSAGE value="Added key \&quot;entityStatus\&quot; for todolists and typed their" />
     <MESSAGE value="Added functional during deletion todolist(button disabled until answer comes from server) and added catch for removeTodolistTC" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added functional during deletion todolist(button disabled until answer comes from server) and added catch for removeTodolistTC" />
+    <MESSAGE value="Added functional during deletion todolist(button disabled input and button for input)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added functional during deletion todolist(button disabled input and button for input)" />
   </component>
 </project>
