@@ -11,6 +11,7 @@ import {Dispatch} from 'redux'
 import {AppRootStateType} from '../../app/store'
 import {SetErrorType, setStatusAC, SetStatusType} from '../../app/appReducer'
 import {handleServerAppError, handleServerNetworkError} from '../../utils/error-utils'
+import {AxiosError} from 'axios'
 
 const initialState: TasksStateType = {}
 
@@ -97,6 +98,18 @@ export const addTaskTC = (title: string, todolistId: string) => (dispatch: Dispa
             handleServerNetworkError(dispatch, e.message)
         })
 }
+
+type ErrorType = {
+    statusCode: number,
+    messages: [
+        {
+            message: string,
+            field: string
+        }
+    ],
+    error: string
+}
+
 export const updateTaskTC = (taskId: string, domainModel: UpdateDomainTaskModelType, todolistId: string) =>
     (dispatch: Dispatch<ActionsType>, getState: () => AppRootStateType) => {
         dispatch(setStatusAC('loading'))
@@ -129,8 +142,9 @@ export const updateTaskTC = (taskId: string, domainModel: UpdateDomainTaskModelT
                 }
 
             })
-            .catch((e) => {
-                handleServerNetworkError(dispatch, e.message)
+            .catch((e: AxiosError<ErrorType>) => {
+                const error = e.response ? e.response?.data.messages[0].message : e.message
+                handleServerNetworkError(dispatch, error)
             })
     }
 
