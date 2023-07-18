@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14d9459d-3626-4809-8f46-6aec759c113e" name="Changes" comment="sdagsda" />
+    <list default="true" id="14d9459d-3626-4809-8f46-6aec759c113e" name="Changes" comment="Added functional during deletion todolist(button disabled until answer comes from server) and added catch for removeTodolistTC" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -74,6 +74,7 @@
       <workItem from="1689443850132" duration="5602000" />
       <workItem from="1689526086837" duration="1165000" />
       <workItem from="1689626485708" duration="26000" />
+      <workItem from="1689708176632" duration="299000" />
     </task>
     <task id="LOCAL-00001" summary="Learned and created thunk creator, thunk and learned and connected middleware">
       <created>1689276283386</created>
@@ -243,7 +244,21 @@
       <option name="project" value="LOCAL" />
       <updated>1689626509097</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Added key \&quot;entityStatus\&quot; for todolists and typed their">
+      <created>1689708352818</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1689708352818</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Added functional during deletion todolist(button disabled until answer comes from server) and added catch for removeTodolistTC">
+      <created>1689708434660</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1689708434660</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -277,6 +292,8 @@
     <MESSAGE value="Created and learned enum in todolists-api, added error handling for updateTaskTC" />
     <MESSAGE value="Added .catch for addTaskTC and updateTaskTC" />
     <MESSAGE value="sdagsda" />
-    <option name="LAST_COMMIT_MESSAGE" value="sdagsda" />
+    <MESSAGE value="Added key \&quot;entityStatus\&quot; for todolists and typed their" />
+    <MESSAGE value="Added functional during deletion todolist(button disabled until answer comes from server) and added catch for removeTodolistTC" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added functional during deletion todolist(button disabled until answer comes from server) and added catch for removeTodolistTC" />
   </component>
 </project>
