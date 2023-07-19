@@ -11,7 +11,7 @@ import {Dispatch} from 'redux'
 import {AppRootStateType} from '../../app/store'
 import {SetErrorType, setStatusAC, SetStatusType} from '../../app/appReducer'
 import {handleServerAppError, handleServerNetworkError} from '../../utils/error-utils'
-import {AxiosError} from 'axios'
+import axios, {AxiosError} from 'axios'
 
 const initialState: TasksStateType = {}
 
@@ -79,24 +79,35 @@ export const removeTaskTC = (taskId: string, todolistId: string) => (dispatch: D
 }
 
 
-export const addTaskTC = (title: string, todolistId: string) => (dispatch: Dispatch<ActionsType>) => {
+export const addTaskTC = (title: string, todolistId: string) => async (dispatch: Dispatch<ActionsType>) => {
     dispatch(setStatusAC('loading'))
-    todolistsAPI.createTask(todolistId, title)
-        .then(res => {
-            if (res.data.resultCode === Result_Code.OK) {
-                const task = res.data.data.item
-                const action = addTaskAC(task)
-                dispatch(action)
-                dispatch(setStatusAC('succeeded'))
+    try {
+        const res = await todolistsAPI.createTask(todolistId, title)
+        if (res.data.resultCode === Result_Code.OK) {
+            const task = res.data.data.item
+            const action = addTaskAC(task)
+            dispatch(action)
+            dispatch(setStatusAC('succeeded'))
+        } else {
+            handleServerAppError<{ item: TaskType }>(dispatch, res.data)
+        }
+    } catch (e) {
+        if (axios.isAxiosError<ErrorType>(e)) {
+            const error = e.response ? e.response?.data.messages[0].message : e.message
+            handleServerNetworkError(dispatch, error)
 
-            } else {
-                handleServerAppError<{ item: TaskType }>(dispatch, res.data)
-            }
+            return
+        }
+        const error = (e as Error).message
+        handleServerNetworkError(dispatch, error)
+    }
+    // .then(res => {
 
-        })
-        .catch((e) => {
-            handleServerNetworkError(dispatch, e.message)
-        })
+
+    // })
+    // .catch((e)=>{
+    //     handleServerNetworkError(dispatch, e.message)
+    // })
 }
 
 type ErrorType = {

@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14d9459d-3626-4809-8f46-6aec759c113e" name="Changes" comment="Added functional during deletion todolist(button disabled input and button for input)" />
+    <list default="true" id="14d9459d-3626-4809-8f46-6aec759c113e" name="Changes" comment="фыафы" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -75,6 +75,8 @@
       <workItem from="1689526086837" duration="1165000" />
       <workItem from="1689626485708" duration="26000" />
       <workItem from="1689708176632" duration="394000" />
+      <workItem from="1689708599707" duration="199000" />
+      <workItem from="1689787813206" duration="77000" />
     </task>
     <task id="LOCAL-00001" summary="Learned and created thunk creator, thunk and learned and connected middleware">
       <created>1689276283386</created>
@@ -265,7 +267,49 @@
       <option name="project" value="LOCAL" />
       <updated>1689708514464</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Created folder utils and file error-utils.ts, created func handleServerNetworkError so that code is not duplicated and changed code .catch this func inside updateTaskTC and addTaskTC">
+      <created>1689708641818</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1689708641818</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Created and learn generic function (handleServerAppError) in error-utils, changed this function code .then in addTodolistTC and addTaskTC">
+      <created>1689708706860</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1689708706860</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Created and learn generic function (handleServerAppError) in error-utils, changed this function code .then in addTodolistTC and addTaskTC">
+      <created>1689708730640</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1689708730640</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Typed .catch in updateTaskTC">
+      <created>1689708758343</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1689708758343</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Typed .catch in updateTaskTC">
+      <created>1689708770073</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1689708770073</updated>
+    </task>
+    <task id="LOCAL-00033" summary="фыафы">
+      <created>1689787888691</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1689787888691</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -302,6 +346,10 @@
     <MESSAGE value="Added key \&quot;entityStatus\&quot; for todolists and typed their" />
     <MESSAGE value="Added functional during deletion todolist(button disabled until answer comes from server) and added catch for removeTodolistTC" />
     <MESSAGE value="Added functional during deletion todolist(button disabled input and button for input)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added functional during deletion todolist(button disabled input and button for input)" />
+    <MESSAGE value="Created folder utils and file error-utils.ts, created func handleServerNetworkError so that code is not duplicated and changed code .catch this func inside updateTaskTC and addTaskTC" />
+    <MESSAGE value="Created and learn generic function (handleServerAppError) in error-utils, changed this function code .then in addTodolistTC and addTaskTC" />
+    <MESSAGE value="Typed .catch in updateTaskTC" />
+    <MESSAGE value="фыафы" />
+    <option name="LAST_COMMIT_MESSAGE" value="фыафы" />
   </component>
 </project>
