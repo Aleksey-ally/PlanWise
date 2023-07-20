@@ -1,4 +1,3 @@
-import React from 'react'
 import Grid from '@mui/material/Grid';
 import Checkbox from '@mui/material/Checkbox';
 import FormControl from '@mui/material/FormControl';
@@ -8,13 +7,26 @@ import FormLabel from '@mui/material/FormLabel';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import {useFormik} from 'formik';
+import { useAppDispatch, useAppSelector } from '../../app/store';
+import { loginTC } from './authReducer';
+import {Navigate} from 'react-router-dom'
+
 
 type ErrorType = {
     email?: string
     password?: string
 }
 
+export type LoginType = {
+    email: string
+    password: string
+    rememberMe: boolean
+}
+
 export const Login = () => {
+    const dispatch = useAppDispatch()
+    const isLoggedIn = useAppSelector((state)=> state.auth.isLoggedIn)
+
     const formik = useFormik({
         initialValues: {
           email: '',
@@ -39,11 +51,12 @@ export const Login = () => {
             return errors;
         },
         onSubmit: values => {
-          alert(JSON.stringify(values, null, 2));
+            dispatch(loginTC(values))
           formik.resetForm()
         },
       });
 
+      if(isLoggedIn) return <Navigate to={'/'}/>
 
     return <Grid container justifyContent={'center'}>
         <Grid item justifyContent={'center'}>
