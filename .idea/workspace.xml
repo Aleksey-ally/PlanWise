@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14d9459d-3626-4809-8f46-6aec759c113e" name="Changes" comment="фыафы" />
+    <list default="true" id="14d9459d-3626-4809-8f46-6aec759c113e" name="Changes" comment="Installed react-router-dom and formik, created component \&quot;Login\&quot;, wrapped App in BrowserRouter and added routes for main page, login and not found page">
+      <change beforePath="$PROJECT_DIR$/src/components/AddItemForm/AddItemForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AddItemForm/AddItemForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Login/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Login/Login.tsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -77,6 +80,7 @@
       <workItem from="1689708176632" duration="394000" />
       <workItem from="1689708599707" duration="199000" />
       <workItem from="1689787813206" duration="77000" />
+      <workItem from="1689870961689" duration="335000" />
     </task>
     <task id="LOCAL-00001" summary="Learned and created thunk creator, thunk and learned and connected middleware">
       <created>1689276283386</created>
@@ -309,7 +313,35 @@
       <option name="project" value="LOCAL" />
       <updated>1689787888691</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Typed .catch in addTaskTC, learned unknown">
+      <created>1689870974514</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1689870974514</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Typed .catch in addTaskTC, learned unknown">
+      <created>1689870985377</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1689870985377</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Installed react-router-dom and formik, created component \&quot;Login\&quot;, wrapped App in BrowserRouter and added routes for main page, login and not found page">
+      <created>1689871178433</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1689871178433</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Installed react-router-dom and formik, created component \&quot;Login\&quot;, wrapped App in BrowserRouter and added routes for main page, login and not found page">
+      <created>1689871221806</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1689871221806</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -350,6 +382,8 @@
     <MESSAGE value="Created and learn generic function (handleServerAppError) in error-utils, changed this function code .then in addTodolistTC and addTaskTC" />
     <MESSAGE value="Typed .catch in updateTaskTC" />
     <MESSAGE value="фыафы" />
-    <option name="LAST_COMMIT_MESSAGE" value="фыафы" />
+    <MESSAGE value="Typed .catch in addTaskTC, learned unknown" />
+    <MESSAGE value="Installed react-router-dom and formik, created component \&quot;Login\&quot;, wrapped App in BrowserRouter and added routes for main page, login and not found page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Installed react-router-dom and formik, created component \&quot;Login\&quot;, wrapped App in BrowserRouter and added routes for main page, login and not found page" />
   </component>
 </project>
