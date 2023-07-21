@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14d9459d-3626-4809-8f46-6aec759c113e" name="Changes" comment="Added logic for formik (made flux), added validation for inputs email and password">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/todolists-api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/todolists-api.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/store.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/Login/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Login/Login.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/TodolistsList/TodolistsList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/TodolistsList/TodolistsList.tsx" afterDir="false" />
-    </list>
+    <list default="true" id="14d9459d-3626-4809-8f46-6aec759c113e" name="Changes" comment="asfasf" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -83,7 +77,8 @@
       <workItem from="1689708176632" duration="394000" />
       <workItem from="1689708599707" duration="199000" />
       <workItem from="1689787813206" duration="77000" />
-      <workItem from="1689870961689" duration="543000" />
+      <workItem from="1689870961689" duration="756000" />
+      <workItem from="1689960890140" duration="10000" />
     </task>
     <task id="LOCAL-00001" summary="Learned and created thunk creator, thunk and learned and connected middleware">
       <created>1689276283386</created>
@@ -351,7 +346,21 @@
       <option name="project" value="LOCAL" />
       <updated>1689871373872</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="Created authAPI, authReducer and loginTC, made redirect to main page if isLoggedIn === true and if isLoggedIn === true redirect to login page">
+      <created>1689871519293</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1689871519293</updated>
+    </task>
+    <task id="LOCAL-00040" summary="asfasf">
+      <created>1689960898569</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1689960898569</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -369,8 +378,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added getTasksTC" />
-    <MESSAGE value="Added deleteTaskTC" />
     <MESSAGE value="Added createTaskTC and changed addTaskAC" />
     <MESSAGE value="Added changeTaskStatusTC" />
     <MESSAGE value="шднргто" />
@@ -394,6 +401,8 @@
     <MESSAGE value="Typed .catch in addTaskTC, learned unknown" />
     <MESSAGE value="Installed react-router-dom and formik, created component \&quot;Login\&quot;, wrapped App in BrowserRouter and added routes for main page, login and not found page" />
     <MESSAGE value="Added logic for formik (made flux), added validation for inputs email and password" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added logic for formik (made flux), added validation for inputs email and password" />
+    <MESSAGE value="Created authAPI, authReducer and loginTC, made redirect to main page if isLoggedIn === true and if isLoggedIn === true redirect to login page" />
+    <MESSAGE value="asfasf" />
+    <option name="LAST_COMMIT_MESSAGE" value="asfasf" />
   </component>
 </project>
