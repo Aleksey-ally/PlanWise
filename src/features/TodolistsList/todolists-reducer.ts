@@ -36,9 +36,6 @@ const slice = createSlice({
     }
 })
 
-export const todolistsActions = slice.actions
-export const todolistsReducer = slice.reducer
-
 // thunks
 export const fetchTodolistsTC = (): AppThunk => {
     return (dispatch) => {
@@ -89,3 +86,6 @@ export type TodolistDomainType = TodolistType & {
     filter: FilterValuesType
     entityStatus: RequestStatusType
 }
+
+export const todolistsActions = slice.actions
+export const todolistsReducer = slice.reducer
