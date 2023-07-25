@@ -1,6 +1,5 @@
 import React, {ChangeEvent, KeyboardEvent, useState} from 'react';
-import TextField from '@mui/material/TextField';
-import IconButton from '@mui/material/IconButton';
+import {IconButton, TextField} from '@mui/material';
 import {AddBox} from '@mui/icons-material';
 
 type AddItemFormPropsType = {
@@ -9,7 +8,6 @@ type AddItemFormPropsType = {
 }
 
 export const AddItemForm = React.memo(function ({addItem, disabled = false}: AddItemFormPropsType) {
-    console.log('AddItemForm called')
 
     let [title, setTitle] = useState('')
     let [error, setError] = useState<string | null>(null)
