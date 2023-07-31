@@ -1,4 +1,5 @@
 import axios from "axios";
+import UpdateDomainTaskModelType from "../features/tasks.reducer";
 
 const settings = {
   withCredentials: true,
@@ -120,3 +121,6 @@ export type AddTaskArgType = {
   title: string;
   todolistId: string;
 };
+
+export type UpdateTaskArgType = {taskId: string, domainModel: UpdateDomainTaskModelType, todolistId: string}
+
