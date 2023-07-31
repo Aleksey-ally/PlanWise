@@ -58,19 +58,16 @@ const slice = createSlice({
   },
 });
 
-
-
 // thunks
 
-const fetchTasks = createAsyncThunk('tasks/fetchTasks', (todolistId:string, thunkAPI)=> {
-  const {dispatch} = thunkAPI;
-    dispatch(appActions.setAppStatus({ status: "loading" }));
-    todolistsAPI.getTasks(todolistId).then((res) => {
-      const tasks = res.data.items;
-      dispatch(tasksActions.setTasks({ tasks, todolistId }));
-      dispatch(appActions.setAppStatus({ status: "succeeded" }));
-    });
-})
+const fetchTasks = createAsyncThunk("tasks/fetchTasks", async (todolistId: string, thunkAPI) => {
+  const { dispatch } = thunkAPI;
+  dispatch(appActions.setAppStatus({ status: "loading" }));
+  const res = await todolistsAPI.getTasks(todolistId);
+  const tasks = res.data.items;
+  dispatch(tasksActions.setTasks({ tasks, todolistId }));
+  dispatch(appActions.setAppStatus({ status: "succeeded" }));
+});
 
 export const removeTaskTC =
   (taskId: string, todolistId: string): AppThunk =>
@@ -149,4 +146,4 @@ export type TasksStateType = {
 
 export const tasksReducer = slice.reducer;
 export const tasksActions = slice.actions;
-export const tasksThunks = {fetchTasks};
+export const tasksThunks = { fetchTasks };
