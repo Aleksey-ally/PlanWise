@@ -38,7 +38,7 @@ const slice = createSlice({
   },
   extraReducers: (builder) => {
     builder
-      .addCase(fetchTasks.fulfilled, (state, action)=>{
+      .addCase(fetchTasks.fulfilled, (state, action) => {
         state[action.payload.todolistId] = action.payload.tasks;
       })
       .addCase(todolistsActions.addTodolist, (state, action) => {
@@ -61,12 +61,18 @@ const slice = createSlice({
 // thunks
 
 const fetchTasks = createAsyncThunk("tasks/fetchTasks", async (todolistId: string, thunkAPI) => {
-  const { dispatch } = thunkAPI;
-  dispatch(appActions.setAppStatus({ status: "loading" }));
-  const res = await todolistsAPI.getTasks(todolistId);
-  const tasks = res.data.items;
-  dispatch(appActions.setAppStatus({ status: "succeeded" }));
- return { tasks, todolistId };
+  const { dispatch, rejectWithValue } = thunkAPI;
+
+  try {
+    dispatch(appActions.setAppStatus({ status: "loading" }));
+    const res = await todolistsAPI.getTasks(todolistId);
+    const tasks = res.data.items;
+    dispatch(appActions.setAppStatus({ status: "succeeded" }));
+    return { tasks, todolistId };
+  } catch (e: any) {
+    handleServerNetworkError(e, dispatch);
+    return rejectWithValue(null);
+  }
 });
 
 export const removeTaskTC =
