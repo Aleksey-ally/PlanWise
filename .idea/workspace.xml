@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14d9459d-3626-4809-8f46-6aec759c113e" name="Changes" comment="Refactored thunk fetchTasks into tasks.reducer to createAsyncThunk rtk syntax and wherever it is used and rewrote to async-await">
+    <list default="true" id="14d9459d-3626-4809-8f46-6aec759c113e" name="Changes" comment="ыукрп">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -112,20 +112,9 @@
       <workItem from="1690220164405" duration="97000" />
       <workItem from="1690311101321" duration="10642000" />
       <workItem from="1690836231698" duration="385000" />
-    </task>
-    <task id="LOCAL-00005" summary="Added deleteTaskTC">
-      <created>1689276611166</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1689276611166</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Added deleteTaskTC">
-      <created>1689276634544</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1689276634544</updated>
+      <workItem from="1690999215078" duration="26000" />
+      <workItem from="1691086555864" duration="15000" />
+      <workItem from="1691086590545" duration="6000" />
     </task>
     <task id="LOCAL-00007" summary="Added createTaskTC and changed addTaskAC">
       <created>1689276767211</created>
@@ -456,7 +445,21 @@
       <option name="project" value="LOCAL" />
       <updated>1690836530834</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="Refactored fetchTasks and slice into tasks.reducer and test for him">
+      <created>1690999237893</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1690999237893</updated>
+    </task>
+    <task id="LOCAL-00055" summary="ыукрп">
+      <created>1691086565158</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1691086565158</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -474,8 +477,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Created appReducer for state App and added LinearProgress from MUI for display status during requests" />
-    <MESSAGE value="Added ErrorSnackbar component and logic for his in appReducer" />
     <MESSAGE value="Created error handling for addTaskTC" />
     <MESSAGE value="Created and learned enum in todolists-api, added error handling for updateTaskTC" />
     <MESSAGE value="Added .catch for addTaskTC and updateTaskTC" />
@@ -499,6 +500,8 @@
     <MESSAGE value="Refactored app-reducer to rtk syntax and wherever it is used" />
     <MESSAGE value="Refactored todolists-reducer to rtk syntax and wherever it is used" />
     <MESSAGE value="Refactored thunk fetchTasks into tasks.reducer to createAsyncThunk rtk syntax and wherever it is used and rewrote to async-await" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactored thunk fetchTasks into tasks.reducer to createAsyncThunk rtk syntax and wherever it is used and rewrote to async-await" />
+    <MESSAGE value="Refactored fetchTasks and slice into tasks.reducer and test for him" />
+    <MESSAGE value="ыукрп" />
+    <option name="LAST_COMMIT_MESSAGE" value="ыукрп" />
   </component>
 </project>
