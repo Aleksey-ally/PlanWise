@@ -64,28 +64,21 @@ const slice = createSlice({
 
 const fetchTasks = createAppAsyncThunk<
     { tasks: TaskType[]; todolistId: string },
-    string
->("tasks/fetchTasks", async (todolistId, thunkAPI) => {
-    const {dispatch, rejectWithValue} = thunkAPI;
-    try {
-        dispatch(appActions.setAppStatus({status: "loading"}));
-        const res = await todolistsAPI.getTasks(todolistId);
-        const tasks = res.data.items;
-        dispatch(appActions.setAppStatus({status: "succeeded"}));
-        return {tasks, todolistId};
-    } catch (e: any) {
-        handleServerNetworkError(e, dispatch);
-        return rejectWithValue(null);
-    }
-});
+    string>(
+    "tasks/fetchTasks", async (todolistId, thunkAPI) => {
+        const {dispatch, rejectWithValue} = thunkAPI;
+        try {
+            dispatch(appActions.setAppStatus({status: "loading"}));
+            const res = await todolistsAPI.getTasks(todolistId);
+            const tasks = res.data.items;
+            dispatch(appActions.setAppStatus({status: "succeeded"}));
+            return {tasks, todolistId};
+        } catch (e) {
+            handleServerNetworkError(e, dispatch);
+            return rejectWithValue(null);
+        }
+    });
 
-export const removeTaskTC =
-    (taskId: string, todolistId: string): AppThunk =>
-        (dispatch) => {
-            todolistsAPI.deleteTask(todolistId, taskId).then(() => {
-                dispatch(tasksActions.removeTask({taskId, todolistId}));
-            });
-        };
 
 export const addTaskTC =
     (title: string, todolistId: string): AppThunk =>
@@ -106,6 +99,15 @@ export const addTaskTC =
                     handleServerNetworkError(error, dispatch);
                 });
         };
+
+export const removeTaskTC =
+    (taskId: string, todolistId: string): AppThunk =>
+        (dispatch) => {
+            todolistsAPI.deleteTask(todolistId, taskId).then(() => {
+                dispatch(tasksActions.removeTask({taskId, todolistId}));
+            });
+        };
+
 export const updateTaskTC =
     (taskId: string, domainModel: UpdateDomainTaskModelType, todolistId: string): AppThunk =>
         (dispatch, getState) => {

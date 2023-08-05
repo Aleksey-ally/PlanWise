@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14d9459d-3626-4809-8f46-6aec759c113e" name="Changes" comment="ыукрп">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="14d9459d-3626-4809-8f46-6aec759c113e" name="Changes" comment="Typed fetchTasks and created util for typing" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -115,27 +113,7 @@
       <workItem from="1690999215078" duration="26000" />
       <workItem from="1691086555864" duration="15000" />
       <workItem from="1691086590545" duration="6000" />
-    </task>
-    <task id="LOCAL-00007" summary="Added createTaskTC and changed addTaskAC">
-      <created>1689276767211</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1689276767211</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Added createTaskTC and changed addTaskAC">
-      <created>1689276788613</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1689276788613</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Added changeTaskStatusTC">
-      <created>1689276856973</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1689276856973</updated>
+      <workItem from="1691169985714" duration="126000" />
     </task>
     <task id="LOCAL-00010" summary="Added changeTaskStatusTC">
       <created>1689276881421</created>
@@ -459,7 +437,28 @@
       <option name="project" value="LOCAL" />
       <updated>1691086565158</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="Added errors handling for fetchTasks into tasks.reducer">
+      <created>1691170006064</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1691170006064</updated>
+    </task>
+    <task id="LOCAL-00057" summary="Typed fetchTasks and created util for typing">
+      <created>1691170056623</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1691170056623</updated>
+    </task>
+    <task id="LOCAL-00058" summary="Typed fetchTasks and created util for typing">
+      <created>1691170089912</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1691170089912</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -477,8 +476,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Created error handling for addTaskTC" />
-    <MESSAGE value="Created and learned enum in todolists-api, added error handling for updateTaskTC" />
     <MESSAGE value="Added .catch for addTaskTC and updateTaskTC" />
     <MESSAGE value="sdagsda" />
     <MESSAGE value="Added key \&quot;entityStatus\&quot; for todolists and typed their" />
@@ -502,6 +499,8 @@
     <MESSAGE value="Refactored thunk fetchTasks into tasks.reducer to createAsyncThunk rtk syntax and wherever it is used and rewrote to async-await" />
     <MESSAGE value="Refactored fetchTasks and slice into tasks.reducer and test for him" />
     <MESSAGE value="ыукрп" />
-    <option name="LAST_COMMIT_MESSAGE" value="ыукрп" />
+    <MESSAGE value="Added errors handling for fetchTasks into tasks.reducer" />
+    <MESSAGE value="Typed fetchTasks and created util for typing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Typed fetchTasks and created util for typing" />
   </component>
 </project>
