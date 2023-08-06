@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14d9459d-3626-4809-8f46-6aec759c113e" name="Changes" comment="Typed fetchTasks and created util for typing" />
+    <list default="true" id="14d9459d-3626-4809-8f46-6aec759c113e" name="Changes" comment="кеп" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -114,27 +114,8 @@
       <workItem from="1691086555864" duration="15000" />
       <workItem from="1691086590545" duration="6000" />
       <workItem from="1691169985714" duration="126000" />
-    </task>
-    <task id="LOCAL-00010" summary="Added changeTaskStatusTC">
-      <created>1689276881421</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1689276881421</updated>
-    </task>
-    <task id="LOCAL-00011" summary="шднргто">
-      <created>1689357442273</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1689357442273</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Added deleteTodolistsTC">
-      <created>1689445046949</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1689445046949</updated>
+      <workItem from="1691250707800" duration="68000" />
+      <workItem from="1691342026080" duration="12000" />
     </task>
     <task id="LOCAL-00013" summary="Added createTodolistsTC">
       <created>1689446894680</created>
@@ -458,7 +439,28 @@
       <option name="project" value="LOCAL" />
       <updated>1691170089912</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="Refactored handleServerNetworkError into error-utils">
+      <created>1691250735663</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1691250735665</updated>
+    </task>
+    <task id="LOCAL-00060" summary="Refactored handleServerNetworkError into error-utils">
+      <created>1691250756884</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1691250756884</updated>
+    </task>
+    <task id="LOCAL-00061" summary="кеп">
+      <created>1691342033810</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1691342033810</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -476,8 +478,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added .catch for addTaskTC and updateTaskTC" />
-    <MESSAGE value="sdagsda" />
     <MESSAGE value="Added key \&quot;entityStatus\&quot; for todolists and typed their" />
     <MESSAGE value="Added functional during deletion todolist(button disabled until answer comes from server) and added catch for removeTodolistTC" />
     <MESSAGE value="Added functional during deletion todolist(button disabled input and button for input)" />
@@ -501,6 +501,8 @@
     <MESSAGE value="ыукрп" />
     <MESSAGE value="Added errors handling for fetchTasks into tasks.reducer" />
     <MESSAGE value="Typed fetchTasks and created util for typing" />
-    <option name="LAST_COMMIT_MESSAGE" value="Typed fetchTasks and created util for typing" />
+    <MESSAGE value="Refactored handleServerNetworkError into error-utils" />
+    <MESSAGE value="кеп" />
+    <option name="LAST_COMMIT_MESSAGE" value="кеп" />
   </component>
 </project>
