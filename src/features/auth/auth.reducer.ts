@@ -1,26 +1,25 @@
 import { createAsyncThunk, createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { AppThunk } from "app/store";
 import { appActions } from "app/app.reducer";
-import { authAPI, LoginParamsType } from "features/auth/auth.api";
+import { AppThunk } from "app/store";
 import { clearTasksAndTodolists } from "common/actions";
 import { handleServerAppError, handleServerNetworkError } from "common/utils";
+import { authAPI, LoginParamsType } from "features/auth/auth.api";
 
 const slice = createSlice({
   name: "auth",
   initialState: {
     isLoggedIn: false,
   },
-  reducers: {
-    setIsLoggedIn: (state, action: PayloadAction<{ isLoggedIn: boolean }>) => {
-      state.isLoggedIn = action.payload.isLoggedIn;
-    },
-  },
+  reducers: {},
   extraReducers:(builder) => {
       builder
       .addCase(login.fulfilled, (state, action) => {
         state.isLoggedIn = action.payload.isLoggedIn;
       })
       .addCase(logout.fulfilled, (state, action) => {
+        state.isLoggedIn = action.payload.isLoggedIn;
+      })
+      .addCase(initializeApp.fulfilled, (state, action) => {
         state.isLoggedIn = action.payload.isLoggedIn;
       })
   },
@@ -60,7 +59,7 @@ async(_, thunkAPI)=> {
       dispatch(appActions.setAppStatus({ status: "succeeded" }));
       return{ isLoggedIn: false };
     } else {
-      handleServerAppError(res.data, dispatch);
+      handleServerAppError(res.data, dispatch)
       return rejectWithValue(null)
 
     }
@@ -72,6 +71,27 @@ async(_, thunkAPI)=> {
 )
 
 
+const initializeApp = createAsyncThunk<{isLoggedIn:boolean}, undefined>(
+  'app/initializeApp',
+   async(_, thunkAPI)=> {
+  const {dispatch, rejectWithValue} = thunkAPI
+  try{
+  const res = await authAPI.me()
+      if (res.data.resultCode === 0) {
+        return { isLoggedIn: true }
+      } else {
+        handleServerAppError(res.data, dispatch)
+        return rejectWithValue(null)
+      }
+  } catch(e){
+    handleServerNetworkError(e, dispatch)
+    return rejectWithValue(null)
+  }
+  finally{
+    dispatch(appActions.setAppInitialized({ isInitialized: true }));
+  }
+})
+
 export const authReducer = slice.reducer;
 export const authActions = slice.actions;
-export const authThunk = {login, logout}
+export const authThunk = {login, logout, initializeApp}
