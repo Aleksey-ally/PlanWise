@@ -1,7 +1,7 @@
 import { createAsyncThunk, createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { appActions } from "app/app.reducer";
 import { clearTasksAndTodolists } from "common/actions";
-import { handleServerAppError, handleServerNetworkError } from "common/utils";
+import { handleServerAppError, handleServerNetworkError, thunkTryCatch } from "common/utils";
 import { authAPI, LoginParamsType } from "features/auth/auth.api";
 import { BaseResponseType } from "common/types";
 
@@ -27,25 +27,21 @@ const slice = createSlice({
 
 // thunks
 
-const login = createAsyncThunk<{ isLoggedIn: boolean }, LoginParamsType, { rejectValue: null | BaseResponseType }>(
+
+const login = createAsyncThunk<{ isLoggedIn: boolean }, LoginParamsType>(
   "auth/login",
   async (arg, thunkAPI) => {
     const { dispatch, rejectWithValue } = thunkAPI;
-    try {
-      dispatch(appActions.setAppStatus({ status: "loading" }));
+    return thunkTryCatch(thunkAPI, async ()=> {
       const res = await authAPI.login(arg);
       if (res.data.resultCode === 0) {
-        dispatch(appActions.setAppStatus({ status: "succeeded" }));
         return { isLoggedIn: true };
       } else {
         const isShowAppError = !res.data.fieldsErrors.length;
         handleServerAppError(res.data, dispatch, isShowAppError);
         return rejectWithValue(res.data);
       }
-    } catch (e) {
-      handleServerNetworkError(e, dispatch);
-      return rejectWithValue(null);
-    }
+    });
   },
 );
 
