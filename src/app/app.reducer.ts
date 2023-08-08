@@ -1,7 +1,6 @@
 import { createAsyncThunk, createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { handleServerAppError, handleServerNetworkError } from "common/utils";
 import { authAPI } from "features/auth/auth.api";
-import { authActions } from "features/auth/auth.reducer";
 import { Dispatch } from "redux";
 
 const initialState = {
