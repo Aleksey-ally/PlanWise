@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a18db1d6-718e-4e3d-a62d-afac6009c9f5" name="Changes" comment="Refactored formik into auth.reducer for handler errors fields (email,password) and global handler errors, refactored handleServerAppError into handle-server-app-error" />
+    <list default="true" id="a18db1d6-718e-4e3d-a62d-afac6009c9f5" name="Changes" comment="rehgs" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -80,7 +80,8 @@
       <workItem from="1691690698567" duration="49000" />
       <workItem from="1691773484640" duration="711000" />
       <workItem from="1691862941302" duration="9000" />
-      <workItem from="1691949326617" duration="299000" />
+      <workItem from="1691949326617" duration="546000" />
+      <workItem from="1692035231594" duration="12000" />
     </task>
     <task id="LOCAL-00001" summary="Refactored thunk login into auth.reducer to createAsyncThunk rtk syntax and wherever it is used">
       <created>1691517269303</created>
@@ -145,7 +146,21 @@
       <option name="project" value="LOCAL" />
       <updated>1691949624191</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Added comments for util func into handle-server-app-error and refactored login into auth.reducer">
+      <created>1691949868602</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1691949868602</updated>
+    </task>
+    <task id="LOCAL-00011" summary="rehgs">
+      <created>1692035239998</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1692035239998</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -171,6 +186,8 @@
     <MESSAGE value="Refactored common.types, added index for import types" />
     <MESSAGE value="кервкы" />
     <MESSAGE value="Refactored formik into auth.reducer for handler errors fields (email,password) and global handler errors, refactored handleServerAppError into handle-server-app-error" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactored formik into auth.reducer for handler errors fields (email,password) and global handler errors, refactored handleServerAppError into handle-server-app-error" />
+    <MESSAGE value="Added comments for util func into handle-server-app-error and refactored login into auth.reducer" />
+    <MESSAGE value="rehgs" />
+    <option name="LAST_COMMIT_MESSAGE" value="rehgs" />
   </component>
 </project>
