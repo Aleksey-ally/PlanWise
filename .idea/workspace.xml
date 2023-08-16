@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a18db1d6-718e-4e3d-a62d-afac6009c9f5" name="Changes" comment="rehgs" />
+    <list default="true" id="a18db1d6-718e-4e3d-a62d-afac6009c9f5" name="Changes" comment="фыацуп" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -82,6 +82,8 @@
       <workItem from="1691862941302" duration="9000" />
       <workItem from="1691949326617" duration="546000" />
       <workItem from="1692035231594" duration="12000" />
+      <workItem from="1692122071819" duration="470000" />
+      <workItem from="1692213164090" duration="14000" />
     </task>
     <task id="LOCAL-00001" summary="Refactored thunk login into auth.reducer to createAsyncThunk rtk syntax and wherever it is used">
       <created>1691517269303</created>
@@ -160,7 +162,56 @@
       <option name="project" value="LOCAL" />
       <updated>1692035239998</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Created utilit thunk &quot;thunkTryCatch&quot; and file &quot;thunk-try-catch&quot; into folder &quot;utils&quot; and refactored func addTodolist into todolists.reducer using new thunk &quot;thunkTryCatch&quot;">
+      <created>1692122294018</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1692122294018</updated>
+    </task>
+    <task id="LOCAL-00013" summary="refactored thunk login into auth.reducer using func &quot;thunkTryCatch&quot;">
+      <created>1692122334461</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1692122334461</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Refactored thunk login into auth.reducer using func &quot;thunkTryCatch&quot;">
+      <created>1692122348958</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1692122348958</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Refactored thunk login into auth.reducer using func &quot;thunkTryCatch&quot;">
+      <created>1692122437149</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1692122437149</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Refactored thunk login into auth.reducer using func &quot;createAppAsyncThunk&quot;">
+      <created>1692122454539</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1692122454539</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Refactored thunk login into auth.reducer using func &quot;thunkTryCatch&quot;">
+      <created>1692122537439</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1692122537439</updated>
+    </task>
+    <task id="LOCAL-00018" summary="фыацуп">
+      <created>1692213174341</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1692213174341</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -188,6 +239,12 @@
     <MESSAGE value="Refactored formik into auth.reducer for handler errors fields (email,password) and global handler errors, refactored handleServerAppError into handle-server-app-error" />
     <MESSAGE value="Added comments for util func into handle-server-app-error and refactored login into auth.reducer" />
     <MESSAGE value="rehgs" />
-    <option name="LAST_COMMIT_MESSAGE" value="rehgs" />
+    <MESSAGE value="Created utilit thunk &quot;thunkTryCatch&quot; and file &quot;thunk-try-catch&quot; into folder &quot;utils&quot; and refactored func addTodolist into todolists.reducer using new thunk &quot;thunkTryCatch&quot;" />
+    <MESSAGE value="refactored thunk login into auth.reducer using func &quot;thunkTryCatch&quot;" />
+    <MESSAGE value="Refactored thunk login into auth.reducer using thunk &quot;thunkTryCatch&quot;" />
+    <MESSAGE value="Refactored thunk login into auth.reducer using func &quot;createAppAsyncThunk&quot;" />
+    <MESSAGE value="Refactored thunk login into auth.reducer using func &quot;thunkTryCatch&quot;" />
+    <MESSAGE value="фыацуп" />
+    <option name="LAST_COMMIT_MESSAGE" value="фыацуп" />
   </component>
 </project>
