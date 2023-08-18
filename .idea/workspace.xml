@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a18db1d6-718e-4e3d-a62d-afac6009c9f5" name="Changes" comment="Added hook useActions into Login and TodolistsList components Instead of dispatch">
+    <list default="true" id="a18db1d6-718e-4e3d-a62d-afac6009c9f5" name="Changes" comment="asf">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/TodolistsList/TodolistsList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/TodolistsList/TodolistsList.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +86,9 @@
       <workItem from="1692035231594" duration="12000" />
       <workItem from="1692122071819" duration="470000" />
       <workItem from="1692213164090" duration="14000" />
-      <workItem from="1692294584763" duration="448000" />
+      <workItem from="1692294584763" duration="490000" />
+      <workItem from="1692376744354" duration="25000" />
+      <workItem from="1692463067400" duration="66000" />
     </task>
     <task id="LOCAL-00001" summary="Refactored thunk login into auth.reducer to createAsyncThunk rtk syntax and wherever it is used">
       <created>1691517269303</created>
@@ -236,7 +237,21 @@
       <option name="project" value="LOCAL" />
       <updated>1692294882717</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Added hook useActions into Login and TodolistsList components Instead of dispatch">
+      <created>1692295061621</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1692295061621</updated>
+    </task>
+    <task id="LOCAL-00023" summary="asf">
+      <created>1692376766099</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1692376766099</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -272,6 +287,7 @@
     <MESSAGE value="фыацуп" />
     <MESSAGE value="Created file useActions, learned and used hook useActions into App component Instead of dispatch" />
     <MESSAGE value="Added hook useActions into Login and TodolistsList components Instead of dispatch" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added hook useActions into Login and TodolistsList components Instead of dispatch" />
+    <MESSAGE value="asf" />
+    <option name="LAST_COMMIT_MESSAGE" value="asf" />
   </component>
 </project>
