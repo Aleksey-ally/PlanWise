@@ -1,7 +1,4 @@
-import { createAsyncThunk, createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { handleServerAppError, handleServerNetworkError } from "common/utils";
-import { authAPI } from "features/auth/auth.api";
-import { Dispatch } from "redux";
+import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 const initialState = {
   status: "idle" as RequestStatusType,
@@ -27,7 +24,6 @@ const slice = createSlice({
     },
   },
 });
-
 
 export const appReducer = slice.reducer;
 export const appActions = slice.actions;
