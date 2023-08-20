@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a18db1d6-718e-4e3d-a62d-afac6009c9f5" name="Changes" comment="asf">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="a18db1d6-718e-4e3d-a62d-afac6009c9f5" name="Changes" comment="rthr" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -89,6 +87,8 @@
       <workItem from="1692294584763" duration="490000" />
       <workItem from="1692376744354" duration="25000" />
       <workItem from="1692463067400" duration="66000" />
+      <workItem from="1692463196501" duration="215000" />
+      <workItem from="1692550633265" duration="13000" />
     </task>
     <task id="LOCAL-00001" summary="Refactored thunk login into auth.reducer to createAsyncThunk rtk syntax and wherever it is used">
       <created>1691517269303</created>
@@ -251,7 +251,28 @@
       <option name="project" value="LOCAL" />
       <updated>1692376766099</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Learned utils types, refactored type FormikErrorType with used utils types Partial and Omit into login.tsx">
+      <created>1692463363747</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1692463363747</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Refactored TasksStateType used util type Record">
+      <created>1692463406729</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1692463406729</updated>
+    </task>
+    <task id="LOCAL-00026" summary="rthr">
+      <created>1692550643901</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1692550643901</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -288,6 +309,9 @@
     <MESSAGE value="Created file useActions, learned and used hook useActions into App component Instead of dispatch" />
     <MESSAGE value="Added hook useActions into Login and TodolistsList components Instead of dispatch" />
     <MESSAGE value="asf" />
-    <option name="LAST_COMMIT_MESSAGE" value="asf" />
+    <MESSAGE value="Learned utils types, refactored type FormikErrorType with used utils types Partial and Omit into login.tsx" />
+    <MESSAGE value="Refactored TasksStateType used util type Record" />
+    <MESSAGE value="rthr" />
+    <option name="LAST_COMMIT_MESSAGE" value="rthr" />
   </component>
 </project>
