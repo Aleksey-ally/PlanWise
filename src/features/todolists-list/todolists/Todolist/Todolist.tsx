@@ -1,9 +1,9 @@
 import React, { useCallback, useEffect } from "react";
 import { Delete } from "@mui/icons-material";
 import { Button, IconButton } from "@mui/material";
-import { FilterValuesType, TodolistDomainType } from "features/TodolistsList/todolists.reducer";
-import { tasksThunks } from "features/TodolistsList/tasks.reducer";
-import { TaskType } from "features/TodolistsList/todolists.api";
+import { FilterValuesType, TodolistDomainType } from "features/todolists-list/todolists/todolists.reducer";
+import { tasksThunks } from "features/todolists-list/tasks/model/tasks.reducer";
+import { TaskType } from "features/todolists-list/todolists.api";
 import { TaskStatuses } from "common/enums";
 import { useActions } from "common/hooks";
 import { AddItemForm, EditableSpan } from "common/enums/components";
