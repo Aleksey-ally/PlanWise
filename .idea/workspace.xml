@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a18db1d6-718e-4e3d-a62d-afac6009c9f5" name="Changes" comment="rthr" />
+    <list default="true" id="a18db1d6-718e-4e3d-a62d-afac6009c9f5" name="Changes" comment="bla bla relocated files by folders" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,6 +27,7 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Aleksey/Desktop/it-incubator/Todolist/src/features/todolists-list/tasks/api&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -38,7 +39,17 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="npm.build">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Aleksey\Desktop\it-incubator\Todolist\src\features\todolists-list\tasks\api" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Aleksey\Desktop\it-incubator\Todolist\src\features\todolists-list\todolists\ui" />
+      <recent name="C:\Users\Aleksey\Desktop\it-incubator\Todolist\src\features\todolists-list\todolists\model" />
+      <recent name="C:\Users\Aleksey\Desktop\it-incubator\Todolist\src\features\todolists-list\todolists\api" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.start">
     <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -89,6 +100,9 @@
       <workItem from="1692463067400" duration="66000" />
       <workItem from="1692463196501" duration="215000" />
       <workItem from="1692550633265" duration="13000" />
+      <workItem from="1692637417297" duration="2846000" />
+      <workItem from="1692641915386" duration="224000" />
+      <workItem from="1693154471495" duration="187000" />
     </task>
     <task id="LOCAL-00001" summary="Refactored thunk login into auth.reducer to createAsyncThunk rtk syntax and wherever it is used">
       <created>1691517269303</created>
@@ -272,7 +286,21 @@
       <option name="project" value="LOCAL" />
       <updated>1692550643901</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Created custom hook &quot;useLogin&quot; and relocated code inside him from component &quot;login&quot;">
+      <created>1692637489086</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1692637489088</updated>
+    </task>
+    <task id="LOCAL-00028" summary="bla bla relocated files by folders">
+      <created>1693154656024</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1693154656024</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -312,6 +340,8 @@
     <MESSAGE value="Learned utils types, refactored type FormikErrorType with used utils types Partial and Omit into login.tsx" />
     <MESSAGE value="Refactored TasksStateType used util type Record" />
     <MESSAGE value="rthr" />
-    <option name="LAST_COMMIT_MESSAGE" value="rthr" />
+    <MESSAGE value="Created custom hook &quot;useLogin&quot; and relocated code inside him from component &quot;login&quot;" />
+    <MESSAGE value="bla bla relocated files by folders" />
+    <option name="LAST_COMMIT_MESSAGE" value="bla bla relocated files by folders" />
   </component>
 </project>

@@ -1,13 +1,13 @@
 import React, { useCallback, useEffect } from "react";
 import { Delete } from "@mui/icons-material";
 import { Button, IconButton } from "@mui/material";
-import { FilterValuesType, TodolistDomainType } from "features/TodolistsList/todolists.reducer";
-import { tasksThunks } from "features/TodolistsList/tasks.reducer";
-import { TaskType } from "features/TodolistsList/todolists.api";
+import { FilterValuesType, TodolistDomainType } from "features/todolists-list/todolists/model/todolists.reducer";
+import { tasksThunks } from "features/todolists-list/tasks/model/tasks.reducer";
 import { TaskStatuses } from "common/enums";
 import { useActions } from "common/hooks";
 import { AddItemForm, EditableSpan } from "common/enums/components";
-import { Task } from "./Task/Task";
+import { Task } from "features/todolists-list/todolists/ui/Todolist/Task/Task";
+import {TaskType} from "features/todolists-list/tasks/api/tasks.api.types";
 
 type PropsType = {
   todolist: TodolistDomainType;
