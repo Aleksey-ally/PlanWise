@@ -34,7 +34,7 @@ test("correct todolist should be removed", () => {
 
 test("correct todolist should be added", () => {
   let todolist: TodolistType = {
-    title: "New Todolist",
+    title: "New todolist",
     id: "any id",
     addedDate: "",
     order: 0,
@@ -51,7 +51,7 @@ test("correct todolist should be added", () => {
 });
 
 test("correct todolist should change its name", () => {
-  let newTodolistTitle = "New Todolist";
+  let newTodolistTitle = "New todolist";
 
   const args = { id: todolistId2, title: newTodolistTitle };
 
