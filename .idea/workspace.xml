@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a18db1d6-718e-4e3d-a62d-afac6009c9f5" name="Changes" comment="цуацу">
+    <list default="true" id="a18db1d6-718e-4e3d-a62d-afac6009c9f5" name="Changes" comment="Refactored components todolist and todolists-list, relocated and renamed funcs">
+      <change afterPath="$PROJECT_DIR$/src/features/todolists-list/todolists/ui/todolist/task/filter-tasks-buttons/filter-tasks-buttons.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/todolists-list/todolists-list.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/todolists-list/todolists-list.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/todolists-list/todolists/ui/todolist/task/task.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/todolists-list/todolists/ui/todolist/task/task.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/todolists-list/todolists/ui/todolist/todolist.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/todolists-list/todolists/ui/todolist/todolist.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -19,6 +18,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -33,25 +33,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Aleksey/Desktop/it-incubator/Todolist/src/features/todolists-list/tasks/api&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Users\\Aleksey\\Desktop\\it-incubator\\Todolist\\node_modules\\prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.web.browsers&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\Aleksey\\Desktop\\it-incubator\\Todolist\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/Aleksey/Desktop/it-incubator/Todolist/src/features/todolists-list/tasks/api",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "yarn",
+    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\Aleksey\\Desktop\\it-incubator\\Todolist\\node_modules\\prettier",
+    "settings.editor.selected.configurable": "editing.templates",
+    "ts.external.directory.path": "C:\\Users\\Aleksey\\Desktop\\it-incubator\\Todolist\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Aleksey\Desktop\it-incubator\Todolist\src\features\todolists-list\tasks\api" />
@@ -118,7 +118,8 @@
       <workItem from="1693154471495" duration="187000" />
       <workItem from="1693335292379" duration="3069000" />
       <workItem from="1693506671786" duration="28000" />
-      <workItem from="1693596655148" duration="2419000" />
+      <workItem from="1693596655148" duration="2841000" />
+      <workItem from="1693599562393" duration="970000" />
     </task>
     <task id="LOCAL-00001" summary="Refactored thunk login into auth.reducer to createAsyncThunk rtk syntax and wherever it is used">
       <created>1691517269303</created>
@@ -344,7 +345,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693506697690</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Refactored components todolist and todolists-list, relocated and renamed funcs">
+      <created>1693599269436</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1693599269436</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -362,8 +370,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Refactored thunk logout into app.reducer to createAsyncThunk rtk syntax and wherever it is used and relocated to auth.reducer" />
-    <MESSAGE value="Refactored thunk logout into auth.reducer to createAsyncThunk rtk syntax and wherever it is used" />
     <MESSAGE value="Refactored thunk initializeApp into app.reducer to createAsyncThunk rtk syntax and wherever it is used and relocated to auth.reducer" />
     <MESSAGE value="Refactored common.types, added index for import types" />
     <MESSAGE value="кервкы" />
@@ -387,6 +393,8 @@
     <MESSAGE value="Changed structure project" />
     <MESSAGE value="Refactored component task, deleted funcs &quot;removeTask&quot;, &quot;changeTaskStatus&quot; and &quot;changeTaskTitle&quot; from components todolists-list  and todolist, added model style for components task" />
     <MESSAGE value="цуацу" />
-    <option name="LAST_COMMIT_MESSAGE" value="цуацу" />
+    <MESSAGE value="Refactored components todolist" />
+    <MESSAGE value="Refactored components todolist and todolists-list, relocated and renamed funcs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactored components todolist and todolists-list, relocated and renamed funcs" />
   </component>
 </project>
