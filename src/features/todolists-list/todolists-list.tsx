@@ -8,7 +8,7 @@ import {useActions} from "common/hooks";
 import {selectIsLoggedIn} from "features/auth/model/auth.selectors";
 import {selectTasks} from "features/todolists-list/tasks/model/tasks.selectors";
 import {selectTodolists} from "features/todolists-list/todolists/model/todolists.selectors";
-import {AddItemForm} from "common/enums/components";
+import {AddItemForm} from "common/components";
 
 export const TodolistsList = () => {
     const todolists = useSelector(selectTodolists);
@@ -26,7 +26,7 @@ export const TodolistsList = () => {
     }, []);
 
     const addTodolistCallBack = useCallback((title: string) => {
-        addTodolist(title);
+       return addTodolist(title).unwrap();
     }, []);
 
     if (!isLoggedIn) {

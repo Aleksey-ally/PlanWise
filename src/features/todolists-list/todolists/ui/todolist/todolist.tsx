@@ -2,7 +2,7 @@ import React, { useCallback, useEffect } from "react";
 import { TodolistDomainType } from "features/todolists-list/todolists/model/todolists.reducer";
 import { tasksThunks } from "features/todolists-list/tasks/model/tasks.reducer";
 import { useActions } from "common/hooks";
-import { AddItemForm } from "common/enums/components";
+import { AddItemForm } from "common/components";
 import { TaskType } from "features/todolists-list/tasks/api/tasks.api.types";
 import {
   FilterTasksButtons
@@ -24,7 +24,7 @@ export const Todolist = React.memo(({ todolist, tasks }: Props) => {
 
   const addTaskCallBack = useCallback(
     (title: string) => {
-      addTask({ title, todolistId: todolist.id });
+     return addTask({ title, todolistId: todolist.id }).unwrap();
     },
     [todolist.id]
   );

@@ -4,9 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a18db1d6-718e-4e3d-a62d-afac6009c9f5" name="Changes" comment="Decomposed tasks and task">
-      <change afterPath="$PROJECT_DIR$/src/features/todolists-list/todolists/ui/todolist/todolist-title/todolist-title.tsx" afterDir="false" />
+    <list default="true" id="a18db1d6-718e-4e3d-a62d-afac6009c9f5" name="Changes" comment="керек">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/enums/components/AddItemForm/AddItemForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/components/AddItemForm/AddItemForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/enums/components/EditableSpan/EditableSpan.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/components/EditableSpan/EditableSpan.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/enums/components/ErrorSnackbar/ErrorSnackbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/components/ErrorSnackbar/ErrorSnackbar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/enums/components/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/components/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/todolists-list/todolists-list.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/todolists-list/todolists-list.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/todolists-list/todolists/ui/todolist/tasks/task/task.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/todolists-list/todolists/ui/todolist/tasks/task/task.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/todolists-list/todolists/ui/todolist/todolist-title/todolist-title.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/todolists-list/todolists/ui/todolist/todolist-title/todolist-title.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/todolists-list/todolists/ui/todolist/todolist.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/todolists-list/todolists/ui/todolist/todolist.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -61,11 +68,11 @@
       <recent name="C:\Users\Aleksey\Desktop\it-incubator\Todolist\src\features\todolists-list\tasks\api" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Aleksey\Desktop\it-incubator\Todolist\src\common" />
       <recent name="C:\Users\Aleksey\Desktop\it-incubator\Todolist\src\features\todolists-list\todolists\ui\todolist\tasks" />
       <recent name="C:\Users\Aleksey\Desktop\it-incubator\Todolist\src\features\todolists-list\todolists\ui\todolist" />
       <recent name="C:\Users\Aleksey\Desktop\it-incubator\Todolist\src\features\todolists-list\todolists\ui" />
       <recent name="C:\Users\Aleksey\Desktop\it-incubator\Todolist\src\features\todolists-list\todolists\model" />
-      <recent name="C:\Users\Aleksey\Desktop\it-incubator\Todolist\src\features\todolists-list\todolists\api" />
     </key>
   </component>
   <component name="RunManager" selected="npm.start">
@@ -128,7 +135,9 @@
       <workItem from="1693599562393" duration="1461000" />
       <workItem from="1693933410050" duration="95000" />
       <workItem from="1693938933630" duration="54000" />
-      <workItem from="1694116582803" duration="2089000" />
+      <workItem from="1694116582803" duration="2328000" />
+      <workItem from="1694289725287" duration="15000" />
+      <workItem from="1694374161682" duration="955000" />
     </task>
     <task id="LOCAL-00001" summary="Refactored thunk login into auth.reducer to createAsyncThunk rtk syntax and wherever it is used">
       <created>1691517269303</created>
@@ -376,7 +385,23 @@
       <option name="project" value="LOCAL" />
       <updated>1694118247978</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Decomposed todolist-title">
+      <option name="closed" value="true" />
+      <created>1694118821738</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1694118821738</updated>
+    </task>
+    <task id="LOCAL-00037" summary="керек">
+      <option name="closed" value="true" />
+      <created>1694289736863</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1694289736864</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -394,8 +419,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="кервкы" />
-    <MESSAGE value="Refactored formik into auth.reducer for handler errors fields (email,password) and global handler errors, refactored handleServerAppError into handle-server-app-error" />
     <MESSAGE value="Added comments for util func into handle-server-app-error and refactored login into auth.reducer" />
     <MESSAGE value="rehgs" />
     <MESSAGE value="Created utilit thunk &quot;thunkTryCatch&quot; and file &quot;thunk-try-catch&quot; into folder &quot;utils&quot; and refactored func addTodolist into todolists.reducer using new thunk &quot;thunkTryCatch&quot;" />
@@ -419,6 +442,8 @@
     <MESSAGE value="Refactored components todolist and todolists-list, relocated and renamed funcs" />
     <MESSAGE value="Decomposed todolist, created component filter-tasks-buttons and relocated all logic for filters tasks" />
     <MESSAGE value="Decomposed tasks and task" />
-    <option name="LAST_COMMIT_MESSAGE" value="Decomposed tasks and task" />
+    <MESSAGE value="Decomposed todolist-title" />
+    <MESSAGE value="керек" />
+    <option name="LAST_COMMIT_MESSAGE" value="керек" />
   </component>
 </project>
