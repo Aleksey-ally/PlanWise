@@ -1,7 +1,7 @@
 import React from "react";
 import { Task } from "./task/task";
 import { TaskStatuses } from "common/enums";
-import { TodolistDomainType } from "features/todolists-list/todolists/model/todolists.reducer";
+import { TodolistDomainType } from "features/todolists-list/todolists/model/todolists.slice";
 import { TaskType } from "features/todolists-list/tasks/api/tasks.api.types";
 
 type Props = {

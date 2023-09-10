@@ -1,6 +1,6 @@
 import React, {useCallback, useEffect} from "react";
 import {useSelector} from "react-redux";
-import {todolistsThunks} from "features/todolists-list/todolists/model/todolists.reducer";
+import {todolistsThunks} from "features/todolists-list/todolists/model/todolists.slice";
 import {Grid, Paper} from "@mui/material";
 import {Todolist} from "features/todolists-list/todolists/ui/todolist/todolist";
 import {Navigate} from "react-router-dom";

@@ -1,6 +1,10 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { RequestStatusType } from "app/app.reducer";
-import { todolistsApi, TodolistType, UpdateTodolistTitleArgType } from "features/todolists-list/todolists/api/todolists.api";
+import {
+  todolistsApi,
+  TodolistType,
+  UpdateTodolistTitleArgType
+} from "features/todolists-list/todolists/api/todolists.api";
 import { createAppAsyncThunk, handleServerAppError, thunkTryCatch } from "common/utils";
 import { ResultCode } from "common/enums";
 import { clearTasksAndTodolists } from "common/actions";
@@ -12,23 +16,22 @@ const fetchTodolists = createAppAsyncThunk<{ todolists: TodolistType[] }, void>(
       const res = await todolistsApi.getTodolists();
       return { todolists: res.data };
     });
-  },
+  }
 );
 
 const addTodolist = createAppAsyncThunk<{ todolist: TodolistType }, string>(
   "todo/addTodolist",
   async (title, thunkAPI) => {
-    const { dispatch, rejectWithValue } = thunkAPI;
+    const { rejectWithValue } = thunkAPI;
     return thunkTryCatch(thunkAPI, async () => {
       const res = await todolistsApi.createTodolist(title);
       if (res.data.resultCode === ResultCode.Success) {
         return { todolist: res.data.data.item };
       } else {
-        handleServerAppError(res.data, dispatch);
-        return rejectWithValue(null);
+        return rejectWithValue(res.data);
       }
     });
-  },
+  }
 );
 
 const removeTodolist = createAppAsyncThunk<{ id: string }, string>("todo/removeTodolist", async (id, thunkAPI) => {
@@ -58,7 +61,7 @@ const changeTodolistTitle = createAppAsyncThunk<UpdateTodolistTitleArgType, Upda
         return rejectWithValue(null);
       }
     });
-  },
+  }
 );
 
 const initialState: TodolistDomainType[] = [];
@@ -78,7 +81,7 @@ const slice = createSlice({
       if (todo) {
         todo.entityStatus = action.payload.entityStatus;
       }
-    },
+    }
   },
   extraReducers: (builder) => {
     builder
@@ -89,7 +92,7 @@ const slice = createSlice({
         const newTodolist: TodolistDomainType = {
           ...action.payload.todolist,
           filter: "all",
-          entityStatus: "idle",
+          entityStatus: "idle"
         };
         state.unshift(newTodolist);
       })
@@ -106,10 +109,10 @@ const slice = createSlice({
       .addCase(clearTasksAndTodolists, () => {
         return [];
       });
-  },
+  }
 });
 
-export const todolistsReducer = slice.reducer;
+export const todolistsSlice = slice.reducer;
 export const todolistsActions = slice.actions;
 export const todolistsThunks = { fetchTodolists, addTodolist, removeTodolist, changeTodolistTitle };
 

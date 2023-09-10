@@ -1,6 +1,6 @@
 import React, { useCallback, useEffect } from "react";
-import { TodolistDomainType } from "features/todolists-list/todolists/model/todolists.reducer";
-import { tasksThunks } from "features/todolists-list/tasks/model/tasks.reducer";
+import { TodolistDomainType } from "features/todolists-list/todolists/model/todolists.slice";
+import { tasksThunks } from "features/todolists-list/tasks/model/tasks.slice";
 import { useActions } from "common/hooks";
 import { AddItemForm } from "common/components";
 import { TaskType } from "features/todolists-list/tasks/api/tasks.api.types";
