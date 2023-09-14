@@ -4,10 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a18db1d6-718e-4e3d-a62d-afac6009c9f5" name="Changes" comment="Deleted global massages error during type more 100 chars for titles tasks and todolists">
+    <list default="true" id="a18db1d6-718e-4e3d-a62d-afac6009c9f5" name="Changes" comment="Created and learned addMatcher, relocated logic for preloader into addMatcher">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.reducer.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.reducer.test.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/app.reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.reducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/todolists-list/tasks/model/tasks.reducer.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/todolists-list/tasks/model/tasks.slice.test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/components/AddItemForm/AddItemForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/components/AddItemForm/AddItemForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/utils/create-app-async-thunk.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/utils/create-app-async-thunk.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/utils/handle-server-app-error.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/utils/handle-server-network-error.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/utils/handle-server-network-error.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/utils/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/utils/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/utils/thunk-try-catch.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/auth/model/auth.slice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/auth/model/auth.slice.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/todolists-list/tasks/model/tasks.slice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/todolists-list/tasks/model/tasks.slice.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/todolists-list/todolists/model/todolists.slice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/todolists-list/todolists/model/todolists.slice.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +140,7 @@
       <workItem from="1694116582803" duration="2328000" />
       <workItem from="1694289725287" duration="15000" />
       <workItem from="1694374161682" duration="1853000" />
-      <workItem from="1694717316052" duration="622000" />
+      <workItem from="1694717316052" duration="5381000" />
     </task>
     <task id="LOCAL-00001" summary="Refactored thunk login into auth.reducer to createAsyncThunk rtk syntax and wherever it is used">
       <created>1691517269303</created>
@@ -411,7 +420,15 @@
       <option name="project" value="LOCAL" />
       <updated>1694376024480</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="Created and learned addMatcher, relocated logic for preloader into addMatcher">
+      <option name="closed" value="true" />
+      <created>1694718412234</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1694718412234</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -429,7 +446,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Created utilit thunk &quot;thunkTryCatch&quot; and file &quot;thunk-try-catch&quot; into folder &quot;utils&quot; and refactored func addTodolist into todolists.reducer using new thunk &quot;thunkTryCatch&quot;" />
     <MESSAGE value="refactored thunk login into auth.reducer using func &quot;thunkTryCatch&quot;" />
     <MESSAGE value="Refactored thunk login into auth.reducer using thunk &quot;thunkTryCatch&quot;" />
     <MESSAGE value="Refactored thunk login into auth.reducer using func &quot;createAppAsyncThunk&quot;" />
@@ -454,6 +470,7 @@
     <MESSAGE value="керек" />
     <MESSAGE value="Made that  thunks addTodolistCallBack and addTaskCallBack return promise and added clearing  input field if not error, and do not clearing  input if exist error" />
     <MESSAGE value="Deleted global massages error during type more 100 chars for titles tasks and todolists" />
-    <option name="LAST_COMMIT_MESSAGE" value="Deleted global massages error during type more 100 chars for titles tasks and todolists" />
+    <MESSAGE value="Created and learned addMatcher, relocated logic for preloader into addMatcher" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created and learned addMatcher, relocated logic for preloader into addMatcher" />
   </component>
 </project>
