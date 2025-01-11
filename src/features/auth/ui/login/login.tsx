@@ -16,7 +16,7 @@ export const Login = () => {
   }
 
   return (
-    <Grid container justifyContent="center">
+    <Grid container justifyContent="center" style={{marginTop: "40px"}}>
       <Grid item xs={4}>
         <form onSubmit={formik.handleSubmit}>
           <FormControl>
@@ -33,12 +33,12 @@ export const Login = () => {
               <TextField
                 InputProps={{
                   style: {
-                    color: "#C4C4C4"
+                    color: "#ffffff"
                   }
                 }}
                 InputLabelProps={{
                   style: {
-                    color: "#D3D3D3"
+                    color: "#ffffff"
                   }
                 }}
                 sx={{
@@ -60,12 +60,12 @@ export const Login = () => {
               <TextField type="password"
                          InputProps={{
                            style: {
-                             color: "#C4C4C4"
+                             color: "#ffffff"
                            }
                          }}
                          InputLabelProps={{
                            style: {
-                             color: "#D3D3D3"
+                             color: "#ffffff"
                            }
                          }}
                          sx={{
@@ -92,7 +92,7 @@ export const Login = () => {
                 variant={"contained"}
                 color={"success"}
                 disabled={!(formik.isValid && formik.dirty)}
-                style={{ color: "#C4C4C4" }}
+                style={{ color: "#ffffff" }}
               >
                 Login
               </Button>

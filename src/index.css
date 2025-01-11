@@ -4,11 +4,16 @@ body {
     "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #1F1F1F;
+  background-color: #292B2F;
 }
 
 p,span{
-  color:#C4C4C4
+  color:#FFFFFF
+}
+
+h3{
+  padding: 0;
+  margin: 4px 0 4px 0;
 }
 
 code {

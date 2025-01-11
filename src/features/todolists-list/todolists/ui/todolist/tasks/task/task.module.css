@@ -1,3 +1,21 @@
+.task {
+    display: flex;
+    align-items: center;
+    background-color: #292B31;
+    border-radius: 4px
+}
+
+.task:first-child {
+    margin-top: 10px;
+}
+
 .isDone {
-    opacity: 0.5;
+    opacity: .5;
+    .icon{
+        color: #FF0000;
+    }
+}
+
+.icon {
+    color: #8B0000
 }

@@ -14,7 +14,7 @@ export const AddItemForm = React.memo(function({ addItem, disabled = false }: Ad
 
   const addItemHandler = () => {
     if (title.trim() !== "") {
-      addItem(title).then((res) => {
+      addItem(title).then(() => {
         setTitle("");
       }).catch((err: RejectValueType) => {
         if (err.data) {
@@ -41,7 +41,7 @@ export const AddItemForm = React.memo(function({ addItem, disabled = false }: Ad
   };
 
   return (
-    <div>
+    <div style={{ display: "flex", alignItems: "center" }}>
       <TextField
         variant="outlined"
         disabled={disabled}
@@ -51,9 +51,32 @@ export const AddItemForm = React.memo(function({ addItem, disabled = false }: Ad
         onKeyPress={onKeyPressHandler}
         label="Title"
         helperText={error}
+        InputProps={{
+          style: {
+            color: "#C4C4C4"
+          }
+        }}
+        InputLabelProps={{
+          style: {
+            color: "#D3D3D3"
+          }
+        }}
+        sx={{
+          "& .MuiOutlinedInput-root": {
+            "& fieldset": {
+              borderColor: "#7D7D7D" // Цвет рамки
+            },
+            "&:hover fieldset": {
+              borderColor: "#7D7D7D" // Цвет рамки при hover
+            },
+            "&.Mui-focused fieldset": {
+              borderColor: "#7D7D7D" // Цвет рамки при фокусе
+            }
+          }
+        }}
       />
-      <IconButton color="primary" onClick={addItemHandler} disabled={disabled}>
-        <AddBox />
+      <IconButton style={{ color: "#8A8C8E" }} onClick={addItemHandler} disabled={disabled}>
+        <AddBox/>
       </IconButton>
     </div>
   );

@@ -3,7 +3,6 @@ import { useSelector } from "react-redux";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { AppBar, Button, CircularProgress, Container, LinearProgress, Toolbar, Typography } from "@mui/material";
 import { Login } from "features/auth/ui/login/login";
-import "./App.css";
 import { TodolistsList } from "features/todolists-list/todolists-list";
 import { useActions } from "common/hooks";
 import { selectIsLoggedIn } from "features/auth/model/auth.selectors";
@@ -37,14 +36,14 @@ function App() {
       <div className="App">
         <ErrorSnackbar />
         <AppBar position="static"
-                style={{ backgroundColor: "#282828", display: "flex", alignItems: "end", color: "#D3D3D3" }}>
+                style={{ backgroundColor: "#212327", display: "flex", alignItems: "end", color: "#ffffff", justifyContent:"center" }}>
           <Toolbar>
             {isLoggedIn ? (
-                <Button color="inherit" onClick={logoutHandler}>
+                <Button color="inherit" variant={"outlined"} onClick={logoutHandler}>
                   Log out
                 </Button>
               ) :
-              <Typography style={{ color: "#D3D3D3" }}>Login</Typography>
+              <Typography style={{ color: "#ffffff" }}>Login</Typography>
             }
           </Toolbar>
           {status === "loading" && <LinearProgress />}

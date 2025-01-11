@@ -23,21 +23,21 @@ export const FilterTasksButtons = ({todolist}: Props) => {
             <Button
                 variant={todolist.filter === "all" ? "outlined" : "text"}
                 onClick={() => changeTasksFilter('all')}
-                color={"inherit"}
+                style={{color:"#007BFF", borderColor:"#007BFF"}}
             >
                 All
             </Button>
             <Button
                 variant={todolist.filter === "active" ? "outlined" : "text"}
                 onClick={() => changeTasksFilter('active')}
-                color={"primary"}
+                style={{color:"#F39C12", borderColor:"#F39C12"}}
             >
                 Active
             </Button>
             <Button
                 variant={todolist.filter === "completed" ? "outlined" : "text"}
                 onClick={() => changeTasksFilter('completed')}
-                color={"secondary"}
+                color={"success"}
             >
                 Completed
             </Button>

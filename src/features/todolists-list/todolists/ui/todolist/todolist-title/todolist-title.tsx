@@ -26,10 +26,10 @@ export const TodolistTitle = ({ todolist }: Props) => {
 
   return (
     <>
-      <h3>
+      <h3 style={{display:"flex", alignItems:"center"}}>
         <EditableSpan value={todolist.title} onChange={changeTodolistTitleCallBack} />
         <IconButton onClick={removeTodolistHandler} disabled={todolist.entityStatus === "loading"}>
-          <Delete />
+          <Delete style={{color:"#8B0000"}} />
         </IconButton>
       </h3>
     </>

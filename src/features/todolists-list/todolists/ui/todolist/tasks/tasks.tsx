@@ -1,4 +1,5 @@
 import React from "react";
+import s from './tasks.module.css'
 import { Task } from "./task/task";
 import { TaskStatuses } from "common/enums";
 import { TodolistDomainType } from "features/todolists-list/todolists/model/todolists.slice";
@@ -19,7 +20,7 @@ export const Tasks = ({ todolist, tasks }: Props) => {
     tasksForTodolist = tasks.filter((t) => t.status === TaskStatuses.Completed);
   }
   return (
-    <div>
+    <div className={s.tasks}>
       {tasksForTodolist.map((t) => (
         <Task
           key={t.id}
