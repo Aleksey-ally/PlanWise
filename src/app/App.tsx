@@ -1,17 +1,7 @@
 import React, { useEffect } from "react";
 import { useSelector } from "react-redux";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import {
-  AppBar,
-  Button,
-  CircularProgress,
-  Container,
-  IconButton,
-  LinearProgress,
-  Toolbar,
-  Typography,
-} from "@mui/material";
-import { Menu } from "@mui/icons-material";
+import { AppBar, Button, CircularProgress, Container, LinearProgress, Toolbar, Typography } from "@mui/material";
 import { Login } from "features/auth/ui/login/login";
 import "./App.css";
 import { TodolistsList } from "features/todolists-list/todolists-list";
@@ -46,17 +36,16 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <ErrorSnackbar />
-        <AppBar position="static">
+        <AppBar position="static"
+                style={{ backgroundColor: "#282828", display: "flex", alignItems: "end", color: "#D3D3D3" }}>
           <Toolbar>
-            <IconButton edge="start" color="inherit" aria-label="menu">
-              <Menu />
-            </IconButton>
-            <Typography variant="h6">News</Typography>
-            {isLoggedIn && (
-              <Button color="inherit" onClick={logoutHandler}>
-                Log out
-              </Button>
-            )}
+            {isLoggedIn ? (
+                <Button color="inherit" onClick={logoutHandler}>
+                  Log out
+                </Button>
+              ) :
+              <Typography style={{ color: "#D3D3D3" }}>Login</Typography>
+            }
           </Toolbar>
           {status === "loading" && <LinearProgress />}
         </AppBar>

@@ -30,19 +30,69 @@ export const Login = () => {
               <p>или используйте данные тестовой учетной записи:</p>
             </FormLabel>
             <FormGroup>
-              <TextField label="Email" margin="normal" {...formik.getFieldProps("email")} />
+              <TextField
+                InputProps={{
+                  style: {
+                    color: "#C4C4C4"
+                  }
+                }}
+                InputLabelProps={{
+                  style: {
+                    color: "#D3D3D3"
+                  }
+                }}
+                sx={{
+                  "& .MuiOutlinedInput-root": {
+                    "& fieldset": {
+                      borderColor: "#7D7D7D" // Цвет рамки
+                    },
+                    "&:hover fieldset": {
+                      borderColor: "#7D7D7D" // Цвет рамки при hover
+                    },
+                    "&.Mui-focused fieldset": {
+                      borderColor: "#7D7D7D" // Цвет рамки при фокусе
+                    }
+                  }
+                }}
+                label="Email" margin="normal"
+                {...formik.getFieldProps("email")} />
               {formik.touched.email && formik.errors.email && <p className={s.error}>{formik.errors.email}</p>}
-              <TextField type="password" label="Password" margin="normal" {...formik.getFieldProps("password")} />
+              <TextField type="password"
+                         InputProps={{
+                           style: {
+                             color: "#C4C4C4"
+                           }
+                         }}
+                         InputLabelProps={{
+                           style: {
+                             color: "#D3D3D3"
+                           }
+                         }}
+                         sx={{
+                           "& .MuiOutlinedInput-root": {
+                             "& fieldset": {
+                               borderColor: "#7D7D7D" // Цвет рамки
+                             },
+                             "&:hover fieldset": {
+                               borderColor: "#7D7D7D" // Цвет рамки при hover
+                             },
+                             "&.Mui-focused fieldset": {
+                               borderColor: "#7D7D7D" // Цвет рамки при фокусе
+                             }
+                           }
+                         }}
+                         label="Password" margin="normal" {...formik.getFieldProps("password")} />
               {formik.touched.password && formik.errors.password && <p className={s.error}>{formik.errors.password}</p>}
               <FormControlLabel
                 label={"Remember me"}
-                control={<Checkbox {...formik.getFieldProps("rememberMe")} checked={formik.values.rememberMe} />}
+                control={<Checkbox style={{color:"#7D7D7D"}} {...formik.getFieldProps("rememberMe")} checked={formik.values.rememberMe} />}
               />
               <Button
                 type={"submit"}
                 variant={"contained"}
+                color={"success"}
                 disabled={!(formik.isValid && formik.dirty)}
-                color={"primary"}
+                style={{ color: "#C4C4C4" }}
               >
                 Login
               </Button>
