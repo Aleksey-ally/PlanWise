@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a18db1d6-718e-4e3d-a62d-afac6009c9f5" name="Changes" comment="Created and learned addMatcher, relocated logic for preloader into addMatcher">
+    <list default="true" id="a18db1d6-718e-4e3d-a62d-afac6009c9f5" name="Changes" comment="feat: added authorization with token">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/api/common.api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/api/common.api.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/auth/api/auth.api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/auth/api/auth.api.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/auth/model/auth.slice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/auth/model/auth.slice.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/auth/lib/useLogin.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/auth/lib/useLogin.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/auth/ui/login/login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/auth/ui/login/login.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,7 +135,7 @@
       <workItem from="1708800391902" duration="732000" />
       <workItem from="1709323098728" duration="98000" />
       <workItem from="1733819410206" duration="369000" />
-      <workItem from="1736596735072" duration="1903000" />
+      <workItem from="1736596735072" duration="2469000" />
     </task>
     <task id="LOCAL-00001" summary="Refactored thunk login into auth.reducer to createAsyncThunk rtk syntax and wherever it is used">
       <created>1691517269303</created>
@@ -424,7 +423,15 @@
       <option name="project" value="LOCAL" />
       <updated>1694718412234</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="feat: added authorization with token">
+      <option name="closed" value="true" />
+      <created>1736598805060</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1736598805060</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -442,7 +449,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="refactored thunk login into auth.reducer using func &quot;thunkTryCatch&quot;" />
     <MESSAGE value="Refactored thunk login into auth.reducer using thunk &quot;thunkTryCatch&quot;" />
     <MESSAGE value="Refactored thunk login into auth.reducer using func &quot;createAppAsyncThunk&quot;" />
     <MESSAGE value="Refactored thunk login into auth.reducer using func &quot;thunkTryCatch&quot;" />
@@ -467,6 +473,7 @@
     <MESSAGE value="Made that  thunks addTodolistCallBack and addTaskCallBack return promise and added clearing  input field if not error, and do not clearing  input if exist error" />
     <MESSAGE value="Deleted global massages error during type more 100 chars for titles tasks and todolists" />
     <MESSAGE value="Created and learned addMatcher, relocated logic for preloader into addMatcher" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created and learned addMatcher, relocated logic for preloader into addMatcher" />
+    <MESSAGE value="feat: added authorization with token" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: added authorization with token" />
   </component>
 </project>

@@ -22,14 +22,12 @@ export const Login = () => {
           <FormControl>
             <FormLabel>
               <p>
-                To log in get registered{" "}
+                Для входа пройдите регистрацию{" "}
                 <a href={"https://social-network.samuraijs.com/"} target={"_blank"} rel="noreferrer">
-                  here
+                  здесь
                 </a>
               </p>
-              <p>or use common test account credentials:</p>
-              <p> Email: free@samuraijs.com</p>
-              <p>Password: free</p>
+              <p>или используйте данные тестовой учетной записи:</p>
             </FormLabel>
             <FormGroup>
               <TextField label="Email" margin="normal" {...formik.getFieldProps("email")} />
