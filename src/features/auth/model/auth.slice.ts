@@ -9,6 +9,7 @@ const login = createAppAsyncThunk<{ isLoggedIn: boolean }, LoginParamsType>("aut
   const { rejectWithValue } = thunkAPI;
     const res = await authAPI.login(arg);
     if (res.data.resultCode === ResultCode.Success) {
+      localStorage.setItem("todo-token", res.data.data.token)
       return { isLoggedIn: true };
     } else {
       const isShowAppError = !res.data.fieldsErrors.length;
@@ -21,6 +22,7 @@ const logout = createAppAsyncThunk<{ isLoggedIn: boolean }, void>("auth/logout",
     const res = await authAPI.logout();
     if (res.data.resultCode === ResultCode.Success) {
       dispatch(clearTasksAndTodolists());
+      localStorage.removeItem("todo-token")
       return { isLoggedIn: false };
     } else {
       return rejectWithValue({ data: res.data, showGlobalError: true });

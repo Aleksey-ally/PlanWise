@@ -3,7 +3,7 @@ import { BaseResponseType } from "common/types/common.types";
 
 export const authAPI = {
   login(data: LoginParamsType) {
-    return instance.post<BaseResponseType<{ userId?: number }>>("auth/login", data);
+    return instance.post<BaseResponseType<{ userId?: number, token:string }>>("auth/login", data);
   },
   logout() {
     return instance.delete<BaseResponseType<{ userId?: number }>>("auth/login");

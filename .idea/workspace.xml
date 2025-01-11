@@ -6,17 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="a18db1d6-718e-4e3d-a62d-afac6009c9f5" name="Changes" comment="Created and learned addMatcher, relocated logic for preloader into addMatcher">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.reducer.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.reducer.test.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.reducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/components/AddItemForm/AddItemForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/components/AddItemForm/AddItemForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/utils/create-app-async-thunk.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/utils/create-app-async-thunk.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/utils/handle-server-app-error.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/utils/handle-server-network-error.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/utils/handle-server-network-error.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/utils/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/utils/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/utils/thunk-try-catch.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/api/common.api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/api/common.api.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/auth/api/auth.api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/auth/api/auth.api.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/auth/model/auth.slice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/auth/model/auth.slice.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/todolists-list/tasks/model/tasks.slice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/todolists-list/tasks/model/tasks.slice.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/todolists-list/todolists/model/todolists.slice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/todolists-list/todolists/model/todolists.slice.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,6 +133,10 @@
       <workItem from="1694289725287" duration="15000" />
       <workItem from="1694374161682" duration="1853000" />
       <workItem from="1694717316052" duration="5381000" />
+      <workItem from="1708800391902" duration="732000" />
+      <workItem from="1709323098728" duration="98000" />
+      <workItem from="1733819410206" duration="369000" />
+      <workItem from="1736596735072" duration="1903000" />
     </task>
     <task id="LOCAL-00001" summary="Refactored thunk login into auth.reducer to createAsyncThunk rtk syntax and wherever it is used">
       <created>1691517269303</created>
