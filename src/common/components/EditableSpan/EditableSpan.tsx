@@ -23,7 +23,26 @@ export const EditableSpan = React.memo(function (props: EditableSpanPropsType) {
   };
 
   return editMode ? (
-    <TextField value={title} onChange={changeTitle} autoFocus onBlur={activateViewMode} />
+    <TextField
+      InputProps={{
+        style: {
+          color: "#ffffff"
+        }
+      }}
+      sx={{
+        "& .MuiOutlinedInput-root": {
+          "& fieldset": {
+            borderColor: "#7D7D7D" // Цвет рамки
+          },
+          "&:hover fieldset": {
+            borderColor: "#7D7D7D" // Цвет рамки при hover
+          },
+          "&.Mui-focused fieldset": {
+            borderColor: "#7D7D7D" // Цвет рамки при фокусе
+          }
+        }
+      }}
+      value={title} onChange={changeTitle} autoFocus onBlur={activateViewMode} />
   ) : (
     <span onDoubleClick={activateEditMode}>{props.value}</span>
   );
