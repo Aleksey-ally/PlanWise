@@ -16,7 +16,7 @@ type Props = {
 };
 
 export const Todolist = React.memo(({ todolist, tasks }: Props) => {
-  const { fetchTasks, addTask } = useActions(tasksThunks);
+  const { fetchTasks, addTask, changeTasksOrder } = useActions(tasksThunks);
 
   useEffect(() => {
     fetchTasks(todolist.id);
@@ -24,19 +24,43 @@ export const Todolist = React.memo(({ todolist, tasks }: Props) => {
 
   const addTaskCallBack = useCallback(
     (title: string) => {
-     return addTask({ title, todolistId: todolist.id }).unwrap();
+      return addTask({ title, todolistId: todolist.id }).unwrap();
     },
     [todolist.id]
   );
+
+
+  // Функция для перемещения задач
+  const moveTask = (from: number, to: number) => {
+    const updated = [...tasks];
+
+    const movedTask = updated[from];
+
+    let frontTaskId;
+
+    if (updated[to - 1]) {
+      frontTaskId = updated[to - 1].id;
+
+    } else {
+      frontTaskId = null;
+    }
+
+    const arg = {
+      taskId: movedTask.id,
+      todolistId: movedTask.todoListId,
+      putAfterItemId: frontTaskId
+    };
+    changeTasksOrder(arg);
+  };
 
   return (
     <>
       <TodolistTitle todolist={todolist} />
       <AddItemForm addItem={addTaskCallBack} disabled={todolist.entityStatus === "loading"} />
-      <Tasks tasks={tasks} todolist={todolist} />
+      <Tasks tasks={tasks} todolist={todolist} moveTask={moveTask} />
       <div style={{ paddingTop: "10px" }}>
         <FilterTasksButtons todolist={todolist} />
       </div>
     </>
   );
-});
+})

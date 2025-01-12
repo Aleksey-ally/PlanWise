@@ -7,6 +7,7 @@ import { ResultCode } from "common/enums";
 import { clearTasksAndTodolists } from "common/actions";
 import {
   AddTaskArgType,
+  ChangeTasksOrderArgType,
   RemoveTaskArgType,
   TaskType,
   UpdateTaskArgType,
@@ -15,23 +16,39 @@ import {
 
 const fetchTasks = createAppAsyncThunk<{ tasks: TaskType[]; todolistId: string }, string>(
   "tasks/fetchTasks",
-  async (todolistId, thunkAPI) => {
+  async (todolistId) => {
     const res = await taskAPI.getTasks(todolistId);
     const tasks = res.data.items;
     return { tasks, todolistId };
   }
 );
 
-const addTask = createAppAsyncThunk<{ task: TaskType }, AddTaskArgType>("tasks/addTask", async (arg, thunkAPI) => {
-  const { rejectWithValue } = thunkAPI;
-  const res = await taskAPI.createTask(arg);
-  if (res.data.resultCode === ResultCode.Success) {
-    const task = res.data.data.item;
-    return { task };
-  } else {
-    return rejectWithValue({ data: res.data, showGlobalError: false });
-  }
-});
+const addTask = createAppAsyncThunk<{ task: TaskType }, AddTaskArgType>(
+  "tasks/addTask",
+  async (arg, thunkAPI) => {
+    const { rejectWithValue } = thunkAPI;
+    const res = await taskAPI.createTask(arg);
+    if (res.data.resultCode === ResultCode.Success) {
+      const task = res.data.data.item;
+      return { task };
+    } else {
+      return rejectWithValue({ data: res.data, showGlobalError: false });
+    }
+  });
+
+
+const changeTasksOrder = createAppAsyncThunk<ChangeTasksOrderArgType, ChangeTasksOrderArgType>(
+  "tasks/changeOrder",
+  async (arg, thunkAPI) => {
+    const { rejectWithValue } = thunkAPI;
+    const res = await taskAPI.changeTasksOrder(arg);
+    if (res.data.resultCode === ResultCode.Success) {
+      // const task = res.data.data.item;
+      return arg;
+    } else {
+      return rejectWithValue({ data: res.data, showGlobalError: true });
+    }
+  });
 
 const updateTask = createAppAsyncThunk<UpdateTaskArgType, UpdateTaskArgType>(
   "tasks/updateTask",
@@ -62,6 +79,7 @@ const updateTask = createAppAsyncThunk<UpdateTaskArgType, UpdateTaskArgType>(
     }
   }
 );
+
 
 const removeTask = createAppAsyncThunk<RemoveTaskArgType, RemoveTaskArgType>(
   "tasks/removeTask",
@@ -103,6 +121,15 @@ const slice = createSlice({
         const index = tasks.findIndex((t) => t.id === action.payload.taskId);
         if (index !== -1) tasks.splice(index, 1);
       })
+      .addCase(changeTasksOrder.fulfilled, (state, action) => {
+        const tasks = state[action.payload.todolistId];
+        const indexMovedTask = tasks.findIndex((t) => t.id === action.payload.taskId);
+        const indexAfterTask = tasks.findIndex((t) => t.id === action.payload.putAfterItemId);
+
+        const [movedTask] = tasks.splice(indexMovedTask, 1);
+        tasks.splice(indexAfterTask + 1, 0, movedTask);
+
+      })
       .addCase(todolistsThunks.addTodolist.fulfilled, (state, action) => {
         state[action.payload.todolist.id] = [];
       })
@@ -121,6 +148,6 @@ const slice = createSlice({
 });
 
 export const tasksSlice = slice.reducer;
-export const tasksThunks = { fetchTasks, addTask, updateTask, removeTask };
+export const tasksThunks = { fetchTasks, addTask, updateTask, removeTask, changeTasksOrder };
 
 export type TasksStateType = Record<string, TaskType[]>

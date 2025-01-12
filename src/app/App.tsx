@@ -3,12 +3,12 @@ import { useSelector } from "react-redux";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { AppBar, Button, CircularProgress, Container, LinearProgress, Toolbar, Typography } from "@mui/material";
 import { Login } from "features/auth/ui/login/login";
-import { TodolistsList } from "features/todolists-list/todolists-list";
 import { useActions } from "common/hooks";
 import { selectIsLoggedIn } from "features/auth/model/auth.selectors";
 import { selectAppStatus, selectIsInitialized } from "app/app.selectors";
 import { authThunks } from "features/auth/model/auth.slice";
 import { ErrorSnackbar } from "common/components";
+import { TodolistsList } from "features/todolists-list/todolists-list";
 
 function App() {
   const status = useSelector(selectAppStatus);
@@ -36,7 +36,13 @@ function App() {
       <div className="App">
         <ErrorSnackbar />
         <AppBar position="static"
-                style={{ backgroundColor: "#212327", display: "flex", alignItems: "end", color: "#ffffff", justifyContent:"center" }}>
+                style={{
+                  backgroundColor: "#212327",
+                  display: "flex",
+                  alignItems: "end",
+                  color: "#ffffff",
+                  justifyContent: "center"
+                }}>
           <Toolbar>
             {isLoggedIn ? (
                 <Button color="inherit" variant={"outlined"} onClick={logoutHandler}>
