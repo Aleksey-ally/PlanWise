@@ -1,6 +1,7 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { RequestStatusType } from "app/app.reducer";
 import {
+  ChangeTodoOrderArgType,
   todolistsApi,
   TodolistType,
   UpdateTodolistTitleArgType
@@ -55,6 +56,18 @@ const changeTodolistTitle = createAppAsyncThunk<UpdateTodolistTitleArgType, Upda
   }
 );
 
+const changeTodoOrder = createAppAsyncThunk<ChangeTodoOrderArgType, ChangeTodoOrderArgType>(
+  "todo/changeOrder",
+  async (arg, thunkAPI) => {
+    const { rejectWithValue } = thunkAPI;
+    const res = await todolistsApi.changeTodoOrder(arg);
+    if (res.data.resultCode === ResultCode.Success) {
+      return arg;
+    } else {
+      return rejectWithValue({ data: res.data, showGlobalError: true });
+    }
+  });
+
 const initialState: TodolistDomainType[] = [];
 
 const slice = createSlice({
@@ -97,6 +110,13 @@ const slice = createSlice({
           todo.title = action.payload.title;
         }
       })
+      .addCase(changeTodoOrder.fulfilled, (state, action) => {
+        const indexMovedTodo = state.findIndex((t) => t.id === action.payload.todolistId)
+        const indexAfterTodo = state.findIndex((t) => t.id === action.payload.putAfterItemId)
+
+        const [movedTodo] = state.splice(indexMovedTodo, 1);
+        state.splice(indexAfterTodo + 1, 0, movedTodo)
+      })
       .addCase(clearTasksAndTodolists, () => {
         return [];
       });
@@ -105,7 +125,7 @@ const slice = createSlice({
 
 export const todolistsSlice = slice.reducer;
 export const todolistsActions = slice.actions;
-export const todolistsThunks = { fetchTodolists, addTodolist, removeTodolist, changeTodolistTitle };
+export const todolistsThunks = { fetchTodolists, addTodolist, removeTodolist, changeTodolistTitle, changeTodoOrder};
 
 // types
 export type FilterValuesType = "all" | "active" | "completed";

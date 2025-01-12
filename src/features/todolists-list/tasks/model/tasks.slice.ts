@@ -43,7 +43,6 @@ const changeTasksOrder = createAppAsyncThunk<ChangeTasksOrderArgType, ChangeTask
     const { rejectWithValue } = thunkAPI;
     const res = await taskAPI.changeTasksOrder(arg);
     if (res.data.resultCode === ResultCode.Success) {
-      // const task = res.data.data.item;
       return arg;
     } else {
       return rejectWithValue({ data: res.data, showGlobalError: true });

@@ -18,7 +18,7 @@ export const TodolistsList = () => {
   const tasks = useSelector(selectTasks);
   const isLoggedIn = useSelector(selectIsLoggedIn);
 
-  const { addTodolist, fetchTodolists } = useActions(todolistsThunks);
+  const { addTodolist, fetchTodolists, changeTodoOrder } = useActions(todolistsThunks);
 
   useEffect(() => {
     if (!isLoggedIn) {
@@ -35,6 +35,29 @@ export const TodolistsList = () => {
     return <Navigate to={"/login"} />;
   }
 
+  // Функция для изменения порядка списков
+  const moveTodo = (from: number, to: number) => {
+
+    const updatedTodo = [...todolists];
+
+    const movedTodo = updatedTodo[from];
+
+    let frontTodoId;
+
+    if (updatedTodo[to - 1]) {
+      frontTodoId = updatedTodo[to - 1].id;
+
+    } else {
+      frontTodoId = null;
+    }
+
+    const arg = {
+      todolistId: movedTodo.id, putAfterItemId: frontTodoId
+    };
+
+    changeTodoOrder(arg);
+  };
+
   return (
     <>
       <DndProvider backend={HTML5Backend}>
@@ -42,7 +65,7 @@ export const TodolistsList = () => {
           <AddItemForm addItem={addTodolistCallBack} />
         </Grid>
         <Grid container spacing={3}>
-          {todolists.map((tl) => {
+          {todolists.map((tl, index) => {
             let allTodolistTasks = tasks[tl.id];
             return (
               <Grid item key={tl.id}>
@@ -50,6 +73,8 @@ export const TodolistsList = () => {
                   <Todolist
                     todolist={tl}
                     tasks={allTodolistTasks}
+                    index={index}
+                    moveTodo={moveTodo}
                   />
                 </Paper>
               </Grid>

@@ -9,13 +9,18 @@ import {
 } from "features/todolists-list/todolists/ui/todolist/filter-tasks-buttons/filter-tasks-buttons";
 import { Tasks } from "features/todolists-list/todolists/ui/todolist/tasks/tasks";
 import { TodolistTitle } from "features/todolists-list/todolists/ui/todolist/todolist-title/todolist-title";
+import { useDrag, useDrop } from "react-dnd";
 
 type Props = {
   todolist: TodolistDomainType;
   tasks: TaskType[];
+  index:number
+  moveTodo: (fromIndex: number, toIndex: number) => void
 };
 
-export const Todolist = React.memo(({ todolist, tasks }: Props) => {
+const ItemType = "TODO_LIST";
+
+export const Todolist = React.memo(({ todolist, tasks, index, moveTodo }: Props) => {
   const { fetchTasks, addTask, changeTasksOrder } = useActions(tasksThunks);
 
   useEffect(() => {
@@ -28,6 +33,26 @@ export const Todolist = React.memo(({ todolist, tasks }: Props) => {
     },
     [todolist.id]
   );
+
+  const [, ref] = useDrag({
+    type: ItemType,
+    item: { todoId:todolist.id, index },
+    end: (item, monitor) => {
+      if (!monitor.didDrop()) {
+        console.log("Todo drop failed or outside valid area");
+      }
+    }
+  });
+
+  const [, drop] = useDrop({
+    accept: ItemType,
+    drop: (item: { index: number }) => {
+      if (item.index !== index) {
+        moveTodo(item.index, index);
+        item.index = index;
+      }
+    },
+  });
 
 
   // Функция для перемещения задач
@@ -44,7 +69,6 @@ export const Todolist = React.memo(({ todolist, tasks }: Props) => {
     } else {
       frontTaskId = null;
     }
-
     const arg = {
       taskId: movedTask.id,
       todolistId: movedTask.todoListId,
@@ -54,13 +78,13 @@ export const Todolist = React.memo(({ todolist, tasks }: Props) => {
   };
 
   return (
-    <>
+    <div ref={(node) => ref(drop(node))}>
       <TodolistTitle todolist={todolist} />
       <AddItemForm addItem={addTaskCallBack} disabled={todolist.entityStatus === "loading"} />
       <Tasks tasks={tasks} todolist={todolist} moveTask={moveTask} />
       <div style={{ paddingTop: "10px" }}>
         <FilterTasksButtons todolist={todolist} />
       </div>
-    </>
+    </div>
   );
 })
