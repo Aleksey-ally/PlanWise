@@ -1,9 +1,11 @@
 import axios from "axios";
 
+const TODO_API_KEY = process.env.REACT_APP_VERCEL_TODO_API_KEY ;
+
 export const instance = axios.create({
   baseURL: "https://social-network.samuraijs.com/api/1.1/",
   headers: {
-    "API-KEY": "bfc1e1b1-e625-4414-a10c-6bab615df806",
+    "API-KEY": TODO_API_KEY,
   },
 });
 

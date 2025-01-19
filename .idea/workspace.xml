@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a18db1d6-718e-4e3d-a62d-afac6009c9f5" name="Changes" comment="feat: added drug and drop for todolists">
+    <list default="true" id="a18db1d6-718e-4e3d-a62d-afac6009c9f5" name="Changes" comment="refactor: hide api keys">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/components/EditableSpan/EditableSpan.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/components/EditableSpan/EditableSpan.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/api/common.api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/api/common.api.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,7 +140,9 @@
       <workItem from="1736596735072" duration="6688000" />
       <workItem from="1736615555100" duration="16367000" />
       <workItem from="1736633425156" duration="8608000" />
-      <workItem from="1736696360603" duration="3539000" />
+      <workItem from="1736696360603" duration="4661000" />
+      <workItem from="1736725595658" duration="12000" />
+      <workItem from="1737238708016" duration="508000" />
     </task>
     <task id="LOCAL-00001" summary="Refactored thunk login into auth.reducer to createAsyncThunk rtk syntax and wherever it is used">
       <created>1691517269303</created>
@@ -491,7 +494,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736699573756</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="refactor: change style for EditableSpan">
+      <option name="closed" value="true" />
+      <created>1736700020836</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1736700020836</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -509,7 +520,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added hook useActions into Login and TodolistsList components Instead of dispatch" />
     <MESSAGE value="asf" />
     <MESSAGE value="Learned utils types, refactored type FormikErrorType with used utils types Partial and Omit into login.tsx" />
     <MESSAGE value="Refactored TasksStateType used util type Record" />
@@ -534,7 +544,8 @@
     <MESSAGE value="refactor: reworked styles for all" />
     <MESSAGE value="feat: added drug and drop for tasks" />
     <MESSAGE value="feat: added drug and drop for todolists" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: added drug and drop for todolists" />
+    <MESSAGE value="refactor: change style for EditableSpan" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: change style for EditableSpan" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
