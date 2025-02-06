@@ -1,5 +1,5 @@
 {
-  "name": "todolist",
+  "name": "plan-wise",
   "jest": {
     "moduleNameMapper": {
       "axios": "axios/dist/node/axios.cjs"

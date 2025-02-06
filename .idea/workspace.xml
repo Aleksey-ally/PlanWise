@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a18db1d6-718e-4e3d-a62d-afac6009c9f5" name="Changes" comment="refactor: hide api keys">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/api/common.api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/api/common.api.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,6 +141,7 @@
       <workItem from="1736696360603" duration="4661000" />
       <workItem from="1736725595658" duration="12000" />
       <workItem from="1737238708016" duration="508000" />
+      <workItem from="1737330880234" duration="695000" />
     </task>
     <task id="LOCAL-00001" summary="Refactored thunk login into auth.reducer to createAsyncThunk rtk syntax and wherever it is used">
       <created>1691517269303</created>
@@ -382,14 +381,6 @@
       <option name="project" value="LOCAL" />
       <updated>1693601000039</updated>
     </task>
-    <task id="LOCAL-00035" summary="Decomposed tasks and task">
-      <option name="closed" value="true" />
-      <created>1694118247978</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1694118247978</updated>
-    </task>
     <task id="LOCAL-00036" summary="Decomposed todolist-title">
       <option name="closed" value="true" />
       <created>1694118821738</created>
@@ -502,7 +493,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736700020836</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="refactor: hide api keys">
+      <option name="closed" value="true" />
+      <created>1737330966104</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1737330966104</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -520,7 +519,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="asf" />
     <MESSAGE value="Learned utils types, refactored type FormikErrorType with used utils types Partial and Omit into login.tsx" />
     <MESSAGE value="Refactored TasksStateType used util type Record" />
     <MESSAGE value="rthr" />
@@ -545,7 +543,8 @@
     <MESSAGE value="feat: added drug and drop for tasks" />
     <MESSAGE value="feat: added drug and drop for todolists" />
     <MESSAGE value="refactor: change style for EditableSpan" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: change style for EditableSpan" />
+    <MESSAGE value="refactor: hide api keys" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: hide api keys" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
